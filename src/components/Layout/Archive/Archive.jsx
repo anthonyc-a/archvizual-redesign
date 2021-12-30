@@ -6,9 +6,10 @@ const Archive = ({ archiveOpen }) => {
       <div className="archive-contain">
         <div className="archive-header">
           <ul className="filter">
+            <li>All</li>
             <li>Public</li>
-            <li>Residential</li>
             <li>Concept</li>
+            <li>Residential</li>
           </ul>
 
           <ul className="socials">

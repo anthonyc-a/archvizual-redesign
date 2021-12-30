@@ -8,8 +8,8 @@ const flickityOptions = {
   prevNextButtons: false,
   pageDots: false,
   dragThreshold: 1,
-  selectedAttraction: 0.6,
-  friction: 0.1,
+  selectedAttraction: 0.2,
+  friction: 0,
 }
 
 const Projects = () => {
