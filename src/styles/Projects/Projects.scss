@@ -15,6 +15,10 @@ $extra-large: 1600px;
     transform: translateY(-50%);
   }
 
+  .carousel {
+      overflow: hidden;
+  }
+
   .card {
     width: 272px;
     height: 460px;
