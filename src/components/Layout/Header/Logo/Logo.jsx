@@ -5,7 +5,7 @@ const Logo = () => {
     <a href="/" className="logo">
       roman vlasov
       <div className="divide"></div>
-      <span>arch</span>
+      <span></span>
     </a>
   )
 }

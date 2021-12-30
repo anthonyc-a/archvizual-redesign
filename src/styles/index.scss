@@ -1,8 +1,15 @@
 @import url("https://use.typekit.net/rrc7gjs.css");
 @import "./Layout/Layout.scss";
+@import "./Projects/Projects.scss";
+@import "./Flickity/Flickity.scss";
+
+::-webkit-scrollbar {
+  display: none;
+}
 
 * {
   box-sizing: border-box;
+  scrollbar-width: none;
   padding: 0;
   margin: 0;
 }
@@ -10,8 +17,8 @@
 body {
   background-color: #111111;
   color: #ccc;
-  font-family: neue-haas-grotesk-display, sans-serif; 
-  overflow: hidden;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  overflow-y: hidden;
 }
 
 ul {

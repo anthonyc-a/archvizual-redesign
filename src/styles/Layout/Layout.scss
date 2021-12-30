@@ -36,6 +36,14 @@ $extra-large: 1600px;
   span {
     font-weight: 300;
     color: #777;
+
+    &:before {
+      content: "arch";
+
+      @media screen and (min-width: $small) {
+        content: "architecture";
+      }
+    }
   }
 }
 
@@ -155,9 +163,10 @@ $extra-large: 1600px;
   width: 100%;
   height: calc(100vh - 80px);
   padding: 0 16px;
-  transform: translateY(calc(100vh - 192px));
+  transform: translateY(calc(100vh - 184px));
   background-color: #111;
   transition: 0.25s ease-out;
+  z-index: 1000;
 
   @media screen and (min-width: $small) {
     padding: 0 40px;
@@ -200,7 +209,7 @@ $extra-large: 1600px;
           transition: 0.2s ease-in-out;
 
           @media screen and (min-width: $small) {
-            margin-right: 32px;
+            margin-right: 24px;
           }
 
           &:hover {

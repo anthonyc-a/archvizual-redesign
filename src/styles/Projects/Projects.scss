@@ -1,0 +1,27 @@
+$smaller: 480px;
+$small: 640px;
+$medium: 1040px;
+$large: 1265px;
+$extra-large: 1600px;
+
+.project-contain {
+  position: absolute;
+  top: 12.5%;
+  width: 100%;
+
+  @media screen and (min-width: $small) {
+    top: 50%;
+  }
+
+  .card {
+    width: 272px;
+    height: 460px;
+    margin-right: 104px;
+    background-color: #242424;
+
+    @media screen and (min-width: $small) {
+      width: 560px;
+      height: 400px;
+    }
+  }
+}
