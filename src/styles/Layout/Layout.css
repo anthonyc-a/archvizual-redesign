@@ -157,8 +157,8 @@
 .archive-btn:hover::before {
   visibility: visible;
   opacity: 1;
-  -webkit-transform: translateX(calc(-100% - 12px)) translateY(-2px);
-          transform: translateX(calc(-100% - 12px)) translateY(-2px);
+  -webkit-transform: translateX(calc(-100% - 12px));
+          transform: translateX(calc(-100% - 12px));
 }
 
 .archive-btn:hover .btn-item {
@@ -176,10 +176,10 @@
 .archive {
   position: fixed;
   width: 100%;
-  height: calc(100vh - 88px);
+  height: calc(100vh - 80px);
   padding: 0 20px;
-  -webkit-transform: translateY(calc(100vh - 72px));
-          transform: translateY(calc(100vh - 72px));
+  -webkit-transform: translateY(calc(100vh - 112px));
+          transform: translateY(calc(100vh - 112px));
   background-color: #111;
   -webkit-transition: 0.25s ease-out;
   transition: 0.25s ease-out;
