@@ -138,6 +138,17 @@ $extra-large: 1600px;
     .btn-item {
       background-color: #ccc;
     }
+
+    @media (pointer: coarse) {
+      &::before {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(calc(-100% - 6px));
+      }
+      .btn-item {
+        background-color: #777;
+      }
+    }
   }
 
   .btn-item {
@@ -153,7 +164,7 @@ $extra-large: 1600px;
   width: 100%;
   height: calc(100vh - 80px);
   padding: 0 20px;
-  transform: translateY(calc(100vh - 160px));
+  transform: translateY(calc(100vh - 176px));
   background-color: #111;
   transition: 0.25s ease-out;
 
