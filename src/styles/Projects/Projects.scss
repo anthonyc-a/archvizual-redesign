@@ -8,10 +8,11 @@ $extra-large: 1600px;
   position: absolute;
   top: 17.5%;
   width: 100%;
-  height: -webkit-fill-available;
+  overflow: hidden;
 
   @media screen and (min-width: $small) {
     top: 50%;
+    transform: translateY(-50%);
   }
 
   .card {

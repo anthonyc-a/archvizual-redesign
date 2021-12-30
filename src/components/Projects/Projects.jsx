@@ -23,9 +23,9 @@ const Projects = () => {
         reloadOnUpdate // default false
         static // default false
       >
-        <div className="card"></div>
-        <div className="card"></div>
-        <div className="card"></div>
+        <a href="/" className="card"></a>
+        <a href="/" className="card"></a>
+        <a href="/" className="card"></a>
       </Flickity>
     </div>
   )
