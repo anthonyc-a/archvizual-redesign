@@ -1,0 +1,24 @@
+@import url("https://use.typekit.net/rrc7gjs.css");
+@import "./Layout/Layout.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #111111;
+  color: #ccc;
+  font-family: neue-haas-grotesk-display, sans-serif; 
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}

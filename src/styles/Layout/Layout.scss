@@ -1,0 +1,228 @@
+$smaller: 480px;
+$small: 640px;
+$medium: 1040px;
+$large: 1265px;
+$extra-large: 1600px;
+
+.logo {
+  position: fixed;
+  top: 40px;
+  left: 20px;
+  display: flex;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  @media screen and (min-width: $small) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .divide {
+    position: relative;
+    width: 1px;
+    height: 16px;
+    margin: 0 8px;
+    background-color: #777;
+
+    @media screen and (min-width: $small) {
+      margin: 0 10px;
+    }
+  }
+
+  span {
+    font-weight: 300;
+    color: #777;
+  }
+}
+
+.link-hover {
+  position: relative;
+  &:hover {
+    &::after {
+      width: 100%;
+      right: unset;
+      left: 0;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background-color: #ccc;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.contact-btn {
+  display: none;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  @media screen and (min-width: $small) {
+    display: flex;
+  }
+}
+
+.archive-btn-contain {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 40px;
+  right: 20px;
+  width: 16px;
+  height: 16px;
+
+  @media screen and (min-width: $small) {
+    right: 40px;
+  }
+}
+
+.archive-btn {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &::before {
+    content: "Archive";
+    position: absolute;
+    top: 0;
+    transform: translateX(calc(-100% - 6px));
+    visibility: hidden;
+    opacity: 0;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+
+    @media screen and (min-width: $small) {
+      display: block;
+    }
+  }
+
+  &.active {
+    &::before {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(calc(-100% - 12px));
+    }
+    .btn-item {
+      background-color: #ccc;
+    }
+  }
+
+  &:hover {
+    &::before {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(calc(-100% - 12px)) translateY(-2px);
+    }
+    .btn-item {
+      background-color: #ccc;
+    }
+  }
+
+  .btn-item {
+    width: 3px;
+    height: 3px;
+    background-color: #777;
+    transition: 0.2s ease;
+  }
+}
+
+.archive {
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - 88px);
+  padding: 0 20px;
+  transform: translateY(calc(100vh - 72px));
+  background-color: #111;
+  transition: 0.25s ease-out;
+
+  @media screen and (min-width: $small) {
+    padding: 0 40px;
+    transform: translateY(calc(100vh - 88px));
+  }
+
+  &.active {
+    transform: translateY(80px);
+
+    @media screen and (min-width: $small) {
+      transform: translateY(88px);
+    }
+  }
+
+  .archive-contain {
+    width: 100%;
+
+    .archive-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 72px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      border-top: 1px solid #777;
+
+      @media screen and (min-width: $small) {
+        justify-content: space-between;
+        height: 88px;
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          margin-right: 24px;
+          color: #777;
+          cursor: pointer;
+          transition: 0.2s ease-in-out;
+
+          @media screen and (min-width: $small) {
+            margin-right: 32px;
+          }
+
+          &:hover {
+            color: #ccc;
+          }
+
+          &:nth-child(2) {
+            color: #ccc;
+          }
+
+          &:nth-last-child(1) {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .socials {
+        display: none;
+
+        @media screen and (min-width: $small) {
+          display: block;
+        }
+      }
+    }
+  }
+}
