@@ -102,7 +102,7 @@ $extra-large: 1600px;
   transition: 0.2s ease-in-out;
 
   &::before {
-    content: "Archive";
+    content: "Index";
     position: absolute;
     top: 0;
     transform: translateX(calc(-100% - 6px));
@@ -153,7 +153,7 @@ $extra-large: 1600px;
   width: 100%;
   height: calc(100vh - 80px);
   padding: 0 20px;
-  transform: translateY(calc(100vh - 112px));
+  transform: translateY(calc(100vh - 160px));
   background-color: #111;
   transition: 0.25s ease-out;
 
@@ -220,7 +220,7 @@ $extra-large: 1600px;
         display: none;
 
         @media screen and (min-width: $small) {
-          display: block;
+          display: flex;
         }
       }
     }

@@ -2,7 +2,7 @@ import React from "react"
 
 const Archive = ({ archiveOpen }) => {
   return (
-    <div className={archiveOpen ? "archive" : "archive active"}>
+    <div className={!archiveOpen ? "archive" : "archive active"}>
       <div className="archive-contain">
         <div className="archive-header">
           <ul className="filter">

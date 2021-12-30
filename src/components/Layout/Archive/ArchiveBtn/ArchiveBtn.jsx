@@ -12,7 +12,7 @@ const ArchiveBtn = ({ archiveOpen, setArchiveOpen }) => {
   return (
     <div className="archive-btn-contain">
       <div
-        className={archiveOpen ? "archive-btn" : "archive-btn active"}
+        className={!archiveOpen ? "archive-btn" : "archive-btn active"}
         onClick={() => {
           setArchiveOpen(!archiveOpen)
         }}
