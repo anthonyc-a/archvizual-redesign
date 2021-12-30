@@ -154,26 +154,15 @@
   background-color: #ccc;
 }
 
-.archive-btn:hover::before {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translateX(calc(-100% - 12px));
-          transform: translateX(calc(-100% - 12px));
-}
-
-.archive-btn:hover .btn-item {
-  background-color: #ccc;
-}
-
-@media (pointer: coarse) {
+@media (hover: hover) {
   .archive-btn:hover::before {
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transform: translateX(calc(-100% - 6px));
-            transform: translateX(calc(-100% - 6px));
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateX(calc(-100% - 12px));
+            transform: translateX(calc(-100% - 12px));
   }
   .archive-btn:hover .btn-item {
-    background-color: #777;
+    background-color: #ccc;
   }
 }
 
