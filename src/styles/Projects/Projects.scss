@@ -6,8 +6,9 @@ $extra-large: 1600px;
 
 .project-contain {
   position: absolute;
-  top: 12.5%;
+  top: 17.5%;
   width: 100%;
+  height: -webkit-fill-available;
 
   @media screen and (min-width: $small) {
     top: 50%;
@@ -16,12 +17,13 @@ $extra-large: 1600px;
   .card {
     width: 272px;
     height: 460px;
-    margin-right: 104px;
+    margin-right: 52px;
     background-color: #242424;
 
     @media screen and (min-width: $small) {
       width: 560px;
       height: 400px;
+      margin-right: 104px;
     }
   }
 }

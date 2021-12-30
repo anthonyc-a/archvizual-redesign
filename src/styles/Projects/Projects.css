@@ -1,7 +1,8 @@
 .project-contain {
   position: absolute;
-  top: 12.5%;
+  top: 17.5%;
   width: 100%;
+  height: -webkit-fill-available;
 }
 
 @media screen and (min-width: 640px) {
@@ -13,7 +14,7 @@
 .project-contain .card {
   width: 272px;
   height: 460px;
-  margin-right: 104px;
+  margin-right: 52px;
   background-color: #242424;
 }
 
@@ -21,6 +22,7 @@
   .project-contain .card {
     width: 560px;
     height: 400px;
+    margin-right: 104px;
   }
 }
 /*# sourceMappingURL=Projects.css.map */
