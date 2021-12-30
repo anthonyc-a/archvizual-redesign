@@ -138,8 +138,10 @@ $extra-large: 1600px;
     .btn-item {
       background-color: #ccc;
     }
+  }
 
-    @media (pointer: coarse) {
+  @media (pointer: coarse) {
+    &:hover {
       &::before {
         visibility: hidden;
         opacity: 0;
