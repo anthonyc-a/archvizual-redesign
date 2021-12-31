@@ -14,12 +14,16 @@
   margin: 0;
 }
 
+html,
+body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
 body {
   background-color: #111111;
   color: #ccc;
   font-family: neue-haas-grotesk-display, sans-serif;
-  height: 100%;
-  overflow-y: hidden;
 }
 
 ul {

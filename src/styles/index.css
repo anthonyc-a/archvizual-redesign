@@ -297,7 +297,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100vh - 88px);
 }
 
 .project-contain .project-carousel {
@@ -488,12 +487,16 @@ https://flickity.metafizzy.co
   margin: 0;
 }
 
+html,
+body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
 body {
   background-color: #111111;
   color: #ccc;
   font-family: neue-haas-grotesk-display, sans-serif;
-  height: 100%;
-  overflow-y: hidden;
 }
 
 ul {
