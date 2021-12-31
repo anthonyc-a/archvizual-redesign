@@ -15,18 +15,20 @@ const flickityOptions = {
 const Projects = () => {
   return (
     <div className="project-contain">
-      <Flickity
-        className={"carousel"} // default ''
-        elementType={"div"} // default 'div'
-        options={flickityOptions} // takes flickity options {}
-        disableImagesLoaded={false} // default false
-        reloadOnUpdate // default false
-        static // default false
-      >
-        <a href="/" className="card"></a>
-        <a href="/" className="card"></a>
-        <a href="/" className="card"></a>
-      </Flickity>
+      <div className="project-carousel">
+        <Flickity
+          className={"carousel"} // default ''
+          elementType={"div"} // default 'div'
+          options={flickityOptions} // takes flickity options {}
+          disableImagesLoaded={false} // default false
+          reloadOnUpdate // default false
+          static // default false
+        >
+          <a href="/" className="card"></a>
+          <a href="/" className="card"></a>
+          <a href="/" className="card"></a>
+        </Flickity>
+      </div>
     </div>
   )
 }
