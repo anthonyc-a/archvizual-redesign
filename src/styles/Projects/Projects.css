@@ -3,13 +3,14 @@
   top: 0;
   left: 0;
   width: 100%;
+  max-height: 460px;
+  margin-top: 15vh;
 }
 
 .project-contain .project-carousel {
   position: relative;
   width: 100%;
   max-height: 460px;
-  margin-top: 15vh;
   overflow: hidden;
 }
 
