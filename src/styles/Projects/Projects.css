@@ -107,8 +107,8 @@
 
 .project-contain .project .project-info .project-name {
   font-size: 16px;
-  -webkit-animation: title-anim 0.75s 0.25s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
-          animation: title-anim 0.75s 0.25s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+  -webkit-animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+          animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
@@ -144,8 +144,8 @@
 .project-contain .project .project-info .project-type {
   font-size: 14px;
   color: #777;
-  -webkit-animation: title-anim 0.75s 0.25s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
-          animation: title-anim 0.75s 0.25s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+  -webkit-animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+          animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
