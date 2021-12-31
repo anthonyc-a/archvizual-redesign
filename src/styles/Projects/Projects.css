@@ -59,7 +59,7 @@
 @media screen and (min-width: 640px) {
   .project-contain .project {
     width: 560px;
-    height: 444px;
+    height: 420px;
     margin-right: 104px;
   }
 }
@@ -76,7 +76,7 @@
           transform-origin: center;
   font-size: 12px;
   letter-spacing: 1px;
-  color: #777;
+  color: #ccc;
 }
 
 @media screen and (min-width: 640px) {
@@ -93,7 +93,7 @@
 
 @media screen and (min-width: 640px) {
   .project-contain .project .project-img {
-    height: calc(100% - 44px);
+    height: calc(100% - 40px);
   }
 }
 
@@ -137,7 +137,7 @@
 
 @media screen and (min-width: 640px) {
   .project-contain .project .project-info {
-    height: 44px;
+    height: 40px;
   }
 }
 
