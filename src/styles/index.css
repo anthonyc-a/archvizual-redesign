@@ -20,6 +20,7 @@
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    font-size: 13px;
   }
 }
 
@@ -65,10 +66,10 @@
 .link-hover::after {
   content: "";
   position: absolute;
-  bottom: -4px;
+  top: 50%;
   right: 0;
   width: 0;
-  height: 1px;
+  height: 2px;
   background-color: #ccc;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
@@ -82,6 +83,22 @@
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 1px;
+  z-index: 1000;
+}
+
+.contact-btn:hover svg path {
+  stroke: #cccf;
+}
+
+.contact-btn svg {
+  width: 9px;
+  height: 9px;
+  margin-left: 6px;
+}
+
+.contact-btn svg path {
+  stroke-width: 3px;
+  stroke: #777;
 }
 
 @media screen and (min-width: 640px) {
@@ -89,6 +106,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
   }
 }
 
@@ -146,13 +167,14 @@
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 1px;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease 0.25s;
+  transition: 0.2s ease 0.25s;
 }
 
 @media screen and (min-width: 640px) {
   .archive-btn::before {
     display: block;
+    font-size: 14px;
   }
 }
 
@@ -195,8 +217,8 @@
   -webkit-transform: translateY(calc(100vh - 184px));
           transform: translateY(calc(100vh - 184px));
   background-color: #111;
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
   z-index: 1000;
 }
 
@@ -211,6 +233,7 @@
 .archive.active {
   -webkit-transform: translateY(80px);
           transform: translateY(80px);
+  background-color: #4b4b4b;
 }
 
 @media screen and (min-width: 640px) {
@@ -245,6 +268,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 88px;
+    font-size: 14px;
   }
 }
 
@@ -297,6 +321,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
 }
 
 .project-contain .project-carousel {
@@ -309,11 +334,12 @@
 
 @media screen and (min-width: 640px) {
   .project-contain .project-carousel {
-    margin-top: 20vh;
+    margin-top: 23.5vh;
   }
 }
 
-.project-contain .card {
+.project-contain .project {
+  position: relative;
   width: 272px;
   height: 460px;
   margin-right: 52px;
@@ -321,11 +347,163 @@
 }
 
 @media screen and (min-width: 640px) {
-  .project-contain .card {
+  .project-contain .project {
     width: 560px;
-    height: 400px;
+    height: 444px;
     margin-right: 104px;
   }
+}
+
+.project-contain .project .project-tag {
+  position: absolute;
+  right: -26px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #777;
+}
+
+@media screen and (min-width: 640px) {
+  .project-contain .project .project-tag {
+    right: -29px;
+    font-size: 14px;
+  }
+}
+
+.project-contain .project .project-info {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  bottom: 0;
+  width: 100%;
+  height: 44px;
+  padding-top: 20px;
+  letter-spacing: 1.5px;
+  background-color: #111;
+}
+
+.project-contain .project .project-info .project-name {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 640px) {
+  .project-contain .project .project-info .project-name {
+    font-size: 18px;
+  }
+}
+
+.project-contain .project .project-info .project-type {
+  font-size: 14px;
+  color: #777;
+}
+
+@media screen and (min-width: 640px) {
+  .project-contain .project .project-info .project-type {
+    font-size: 14px;
+  }
+}
+
+.project-index-contain {
+  padding-top: 56px;
+}
+
+.project-index-contain ul {
+  width: 65%;
+}
+
+.project-index-contain ul li {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #777;
+}
+
+.project-index-contain ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 72px;
+}
+
+.project-index-contain ul li a:hover .index-arrow svg path {
+  stroke: #ccc;
+}
+
+.project-index-contain ul li a:hover .info-contain h3::after {
+  width: 100%;
+  right: unset;
+  left: 0;
+}
+
+.project-index-contain ul li a .info-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-index-contain ul li a .info-contain h3 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.project-index-contain ul li a .info-contain h3:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ccc;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.project-index-contain ul li a .info-contain span {
+  margin-right: 56px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #777;
+}
+
+.project-index-contain ul li a .index-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 26px;
+  margin-left: auto;
+}
+
+.project-index-contain ul li a .index-arrow svg {
+  width: 18px;
+  height: 18px;
+}
+
+.project-index-contain ul li a .index-arrow svg path {
+  stroke: #777;
+  stroke-width: 2px;
 }
 
 /*! Flickity v2.1.2
@@ -498,6 +676,12 @@ body {
   background-color: #111111;
   color: #ccc;
   font-family: neue-haas-grotesk-display, sans-serif;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+.archive-open {
+  background-color: #4b4b4b;
 }
 
 ul {

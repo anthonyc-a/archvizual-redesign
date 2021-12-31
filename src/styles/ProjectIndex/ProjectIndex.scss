@@ -1,0 +1,121 @@
+$smaller: 480px;
+$small: 640px;
+$medium: 1040px;
+$large: 1265px;
+$extra-large: 1600px;
+
+.project-index-contain {
+  padding-top: 32px;
+
+  @media screen and (min-width: $small) {
+    padding-top: 56px;
+  }
+
+  ul {
+    width: 100%;
+
+    @media screen and (min-width: $small) {
+      width: 65%;
+    }
+    li {
+      margin-bottom: 8px;
+      border-bottom: 1px solid #777;
+
+      a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 64px;
+
+        @media screen and (min-width: $small) {
+          height: 72px;
+        }
+
+        &:hover {
+          .index-arrow {
+            svg {
+              path {
+                stroke: #ccc;
+              }
+            }
+          }
+
+          .info-contain {
+            h3 {
+              &::after {
+                width: 100%;
+                right: unset;
+                left: 0;
+              }
+            }
+          }
+        }
+
+        .info-contain {
+          display: flex;
+          align-items: center;
+
+          h3 {
+            position: relative;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 1px;
+
+            @media screen and (min-width: $small) {
+              font-size: 20px;
+            }
+
+            &:after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 0;
+              width: 0;
+              height: 2px;
+              background-color: #ccc;
+              transition: 0.2s ease-in-out;
+            }
+          }
+
+          span {
+            margin-right: 32px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #777;
+
+            @media screen and (min-width: $small) {
+              margin-right: 56px;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .index-arrow {
+          display: flex;
+          align-items: center;
+          height: 24px;
+          margin-left: auto;
+
+          @media screen and (min-width: $small) {
+            height: 26px;
+          }
+
+          svg {
+            width: 16px;
+            height: 16px;
+
+            @media screen and (min-width: $small) {
+              width: 18px;
+              height: 18px;
+            }
+
+            path {
+              stroke: #777;
+              stroke-width: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

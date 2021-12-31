@@ -1,6 +1,7 @@
 @import url("https://use.typekit.net/rrc7gjs.css");
 @import "./Layout/Layout.scss";
 @import "./Projects/Projects.scss";
+@import "./ProjectIndex/ProjectIndex.scss";
 @import "./Flickity/Flickity.scss";
 
 ::-webkit-scrollbar {
@@ -25,6 +26,11 @@ body {
   background-color: #111111;
   color: #ccc;
   font-family: neue-haas-grotesk-display, sans-serif;
+  transition: 0.25s ease-out;
+}
+
+.archive-open {
+  background-color: rgb(75, 75, 75);
 }
 
 ul {

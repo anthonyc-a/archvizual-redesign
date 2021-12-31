@@ -62,10 +62,10 @@ $extra-large: 1600px;
   &::after {
     content: "";
     position: absolute;
-    bottom: -4px;
+    top: 50%;
     right: 0;
     width: 0;
-    height: 1px;
+    height: 2px;
     background-color: #ccc;
     transition: 0.2s ease-in-out;
   }
@@ -81,8 +81,28 @@ $extra-large: 1600px;
   letter-spacing: 1px;
   z-index: 1000;
 
+  &:hover {
+    svg {
+      path {
+        stroke: #cccf;
+      }
+    }
+  }
+
+  svg {
+    width: 9px;
+    height: 9px;
+    margin-left: 6px;
+
+    path {
+      stroke-width: 3px;
+      stroke: #777;
+    }
+  }
+
   @media screen and (min-width: $small) {
     display: flex;
+    align-items: center;
     font-size: 14px;
   }
 }
@@ -124,7 +144,7 @@ $extra-large: 1600px;
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 1px;
-    transition: 0.2s ease;
+    transition: 0.2s ease 0.25s;
 
     @media screen and (min-width: $small) {
       display: block;
@@ -171,7 +191,7 @@ $extra-large: 1600px;
   padding: 0 16px;
   transform: translateY(calc(100vh - 184px));
   background-color: #111;
-  transition: 0.25s ease-out;
+  transition: all 0.25s ease-out;
   z-index: 1000;
 
   @media screen and (min-width: $small) {
@@ -181,6 +201,7 @@ $extra-large: 1600px;
 
   &.active {
     transform: translateY(80px);
+    background-color: rgb(75, 75, 75);
 
     @media screen and (min-width: $small) {
       transform: translateY(88px);

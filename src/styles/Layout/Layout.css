@@ -65,10 +65,10 @@
 .link-hover::after {
   content: "";
   position: absolute;
-  bottom: -4px;
+  top: 50%;
   right: 0;
   width: 0;
-  height: 1px;
+  height: 2px;
   background-color: #ccc;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
@@ -85,11 +85,29 @@
   z-index: 1000;
 }
 
+.contact-btn:hover svg path {
+  stroke: #cccf;
+}
+
+.contact-btn svg {
+  width: 9px;
+  height: 9px;
+  margin-left: 6px;
+}
+
+.contact-btn svg path {
+  stroke-width: 3px;
+  stroke: #777;
+}
+
 @media screen and (min-width: 640px) {
   .contact-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 14px;
   }
 }
@@ -148,8 +166,8 @@
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 1px;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease 0.25s;
+  transition: 0.2s ease 0.25s;
 }
 
 @media screen and (min-width: 640px) {
@@ -198,8 +216,8 @@
   -webkit-transform: translateY(calc(100vh - 184px));
           transform: translateY(calc(100vh - 184px));
   background-color: #111;
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
   z-index: 1000;
 }
 
@@ -214,6 +232,7 @@
 .archive.active {
   -webkit-transform: translateY(80px);
           transform: translateY(80px);
+  background-color: #4b4b4b;
 }
 
 @media screen and (min-width: 640px) {
