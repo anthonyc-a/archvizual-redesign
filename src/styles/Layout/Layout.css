@@ -6,7 +6,7 @@
   display: -ms-flexbox;
   display: flex;
   font-family: neue-haas-grotesk-text, sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -27,7 +27,7 @@
 .logo .divide {
   position: relative;
   width: 1px;
-  height: 16px;
+  height: 14px;
   margin: 0 8px;
   background-color: #777;
 }
@@ -276,7 +276,7 @@
 }
 
 .archive .archive-contain .archive-header ul li {
-  margin-right: 16px;
+  margin-right: 20px;
   color: #777;
   cursor: pointer;
   -webkit-transition: 0.2s ease-in-out;
