@@ -18,7 +18,7 @@ $extra-large: 1600px;
   z-index: 1000;
 
   @media screen and (min-width: $small) {
-      top: 40px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 13px;
@@ -120,7 +120,7 @@ $extra-large: 1600px;
   z-index: 1000;
 
   @media screen and (min-width: $small) {
-      top: 40px;
+    top: 40px;
     right: 40px;
   }
 }
@@ -198,6 +198,7 @@ $extra-large: 1600px;
   z-index: 1000;
 
   @media screen and (min-width: $small) {
+    bottom: unset;
     padding: 0 40px;
     transform: translateY(calc(100vh - 88px));
   }
@@ -207,6 +208,7 @@ $extra-large: 1600px;
     background-color: rgb(75, 75, 75);
 
     @media screen and (min-width: $small) {
+        bottom: unset;
       transform: translateY(88px);
     }
   }
