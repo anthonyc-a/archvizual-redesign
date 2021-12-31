@@ -30,7 +30,7 @@ const Archive = ({ archiveOpen }) => {
             </li>
           </ul>
         </div>
-        <ProjectIndex />
+        <ProjectIndex archiveOpen={archiveOpen} />
       </div>
     </div>
   )
