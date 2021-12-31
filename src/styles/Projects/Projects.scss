@@ -31,7 +31,7 @@ $extra-large: 1600px;
     }
 
     @media screen and (min-width: $small) {
-      margin-top: 22.5vh;
+      margin-top: 24vh;
     }
   }
 
@@ -44,7 +44,7 @@ $extra-large: 1600px;
 
     @media screen and (min-width: $small) {
       width: 560px;
-      height: 420px;
+      height: 400px;
       margin-right: 104px;
     }
 
@@ -86,6 +86,8 @@ $extra-large: 1600px;
 
           @media screen and (min-width: $small) {
             left: unset;
+            width: 100%;
+            height: unset;
           }
         }
       }

@@ -44,7 +44,7 @@
 
 @media screen and (min-width: 640px) {
   .project-contain .project-carousel {
-    margin-top: 22.5vh;
+    margin-top: 24vh;
   }
 }
 
@@ -59,7 +59,7 @@
 @media screen and (min-width: 640px) {
   .project-contain .project {
     width: 560px;
-    height: 420px;
+    height: 400px;
     margin-right: 104px;
   }
 }
@@ -113,6 +113,8 @@
 @media screen and (min-width: 640px) {
   .project-contain .project .project-img .img-contain img {
     left: unset;
+    width: 100%;
+    height: unset;
   }
 }
 
