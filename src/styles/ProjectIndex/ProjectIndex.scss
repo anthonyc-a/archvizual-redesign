@@ -73,7 +73,7 @@ $extra-large: 1600px;
               width: 0;
               height: 2px;
               background-color: #ccc;
-              transition: 0.2s ease-in-out;
+              transition: 0.25s cubic-bezier(0.51, 0.92, 0.24, 1);
             }
           }
 
