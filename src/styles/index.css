@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/rrc7gjs.css");
 .logo {
   position: fixed;
-  top: 40px;
+  top: 32px;
   left: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,6 +17,7 @@
 
 @media screen and (min-width: 640px) {
   .logo {
+    top: 40px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -71,8 +72,8 @@
   width: 0;
   height: 2px;
   background-color: #ccc;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.25s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: 0.25s cubic-bezier(0.51, 0.92, 0.24, 1);
 }
 
 .contact-btn {
@@ -124,7 +125,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 40px;
+  top: 32px;
   right: 16px;
   width: 16px;
   height: 16px;
@@ -133,6 +134,7 @@
 
 @media screen and (min-width: 640px) {
   .archive-btn-contain {
+    top: 40px;
     right: 40px;
   }
 }
@@ -214,18 +216,18 @@
 .archive {
   position: fixed;
   width: 100%;
-  height: calc(100vh - 80px);
+  bottom: calc(-100% + 144px);
+  height: calc(100% - 72px);
   padding: 0 16px;
-  -webkit-transform: translateY(100vh);
-          transform: translateY(100vh);
   background-color: #111;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1);
   z-index: 1000;
 }
 
 @media screen and (min-width: 640px) {
   .archive {
+    bottom: unset;
     padding: 0 40px;
     -webkit-transform: translateY(calc(100vh - 88px));
             transform: translateY(calc(100vh - 88px));
@@ -233,13 +235,13 @@
 }
 
 .archive.active {
-  -webkit-transform: translateY(80px);
-          transform: translateY(80px);
+  bottom: 0;
   background-color: #4b4b4b;
 }
 
 @media screen and (min-width: 640px) {
   .archive.active {
+    bottom: unset;
     -webkit-transform: translateY(88px);
             transform: translateY(88px);
   }
@@ -330,8 +332,36 @@
   position: relative;
   width: 100%;
   max-height: 460px;
-  margin-top: 15vh;
+  margin-top: calc(9vh + 57px);
   overflow: hidden;
+  -webkit-animation: intro-anim .5s ease-out;
+          animation: intro-anim .5s ease-out;
+}
+
+@-webkit-keyframes intro-anim {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(24px);
+            transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes intro-anim {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(24px);
+            transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 @media screen and (min-width: 640px) {
@@ -432,7 +462,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1265px) {
   .project-index-contain ul {
     width: 65%;
   }

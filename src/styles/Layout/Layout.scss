@@ -146,7 +146,7 @@ $extra-large: 1600px;
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 1px;
-    transition: 0.2s ease;
+    transition: 0.2s ease-out;
 
     @media screen and (min-width: $small) {
       display: block;
