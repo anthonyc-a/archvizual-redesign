@@ -1,5 +1,6 @@
 import React from "react"
 import Flickity from "react-flickity-component"
+import Project from "./Project/Project"
 
 const flickityOptions = {
   initialIndex: 1,
@@ -24,9 +25,9 @@ const Projects = () => {
           reloadOnUpdate // default false
           static // default false
         >
-          <a href="/" className="card"></a>
-          <a href="/" className="card"></a>
-          <a href="/" className="card"></a>
+          <Project />
+          <Project />
+          <Project />
         </Flickity>
       </div>
     </div>
