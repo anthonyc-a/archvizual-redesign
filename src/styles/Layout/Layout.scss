@@ -42,10 +42,6 @@ $extra-large: 1600px;
 
     &:before {
       content: "archvizual";
-
-      @media screen and (min-width: $small) {
-        content: "architecture";
-      }
     }
   }
 }
@@ -236,7 +232,7 @@ $extra-large: 1600px;
         display: flex;
 
         li {
-          margin-right: 24px;
+          margin-right: 16px;
           color: #777;
           cursor: pointer;
           transition: 0.2s ease-in-out;
