@@ -92,7 +92,7 @@ $extra-large: 1600px;
   svg {
     width: 9px;
     height: 9px;
-    margin-left: 6px;
+    margin-left: 4px;
 
     path {
       stroke-width: 3px;
@@ -144,7 +144,7 @@ $extra-large: 1600px;
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 1px;
-    transition: 0.2s ease 0.25s;
+    transition: 0.2s ease;
 
     @media screen and (min-width: $small) {
       display: block;
@@ -157,6 +157,7 @@ $extra-large: 1600px;
       visibility: visible;
       opacity: 1;
       transform: translateX(calc(-100% - 12px));
+      transition-delay: 0.25s;
     }
     .btn-item {
       background-color: #ccc;
@@ -187,9 +188,9 @@ $extra-large: 1600px;
 .archive {
   position: fixed;
   width: 100%;
+  bottom: -100%;
   height: calc(100vh - 80px);
   padding: 0 16px;
-  transform: translateY(calc(100vh - 184px));
   background-color: #111;
   transition: all 0.25s ease-out;
   z-index: 1000;
@@ -200,7 +201,7 @@ $extra-large: 1600px;
   }
 
   &.active {
-    transform: translateY(80px);
+    bottom: 0;
     background-color: rgb(75, 75, 75);
 
     @media screen and (min-width: $small) {

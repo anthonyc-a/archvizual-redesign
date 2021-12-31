@@ -92,7 +92,7 @@
 .contact-btn svg {
   width: 9px;
   height: 9px;
-  margin-left: 6px;
+  margin-left: 4px;
 }
 
 .contact-btn svg path {
@@ -166,8 +166,8 @@
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 1px;
-  -webkit-transition: 0.2s ease 0.25s;
-  transition: 0.2s ease 0.25s;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 @media screen and (min-width: 640px) {
@@ -182,6 +182,8 @@
   opacity: 1;
   -webkit-transform: translateX(calc(-100% - 12px));
           transform: translateX(calc(-100% - 12px));
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
 }
 
 .archive-btn.active .btn-item {
@@ -211,10 +213,9 @@
 .archive {
   position: fixed;
   width: 100%;
+  bottom: -100%;
   height: calc(100vh - 80px);
   padding: 0 16px;
-  -webkit-transform: translateY(calc(100vh - 184px));
-          transform: translateY(calc(100vh - 184px));
   background-color: #111;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
@@ -230,8 +231,7 @@
 }
 
 .archive.active {
-  -webkit-transform: translateY(80px);
-          transform: translateY(80px);
+  bottom: 0;
   background-color: #4b4b4b;
 }
 
