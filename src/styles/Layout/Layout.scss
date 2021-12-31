@@ -188,8 +188,8 @@ $extra-large: 1600px;
 .archive {
   position: fixed;
   width: 100%;
-  bottom: -100%;
-  height: calc(100vh - 80px);
+  bottom: calc(-100% + 80px);
+  height: calc(100% - 80px);
   padding: 0 16px;
   background-color: #111;
   transition: all 0.25s ease-out;
