@@ -215,8 +215,8 @@
 .archive {
   position: fixed;
   width: 100%;
-  bottom: calc(-100% + 152px);
-  height: calc(100% - 80px);
+  bottom: calc(-100% + 144px);
+  height: calc(100% - 72px);
   padding: 0 16px;
   background-color: #111;
   -webkit-transition: all 0.25s ease-out;
