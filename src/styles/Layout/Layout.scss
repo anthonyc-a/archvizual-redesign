@@ -41,7 +41,7 @@ $extra-large: 1600px;
     color: #777;
 
     &:before {
-      content: "arch";
+      content: "archvizual";
 
       @media screen and (min-width: $small) {
         content: "architecture";

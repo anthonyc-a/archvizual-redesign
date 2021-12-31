@@ -45,7 +45,7 @@
 }
 
 .logo span:before {
-  content: "arch";
+  content: "archvizual";
 }
 
 @media screen and (min-width: 640px) {
@@ -169,8 +169,8 @@
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 1px;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 @media screen and (min-width: 640px) {
@@ -334,8 +334,8 @@
   max-height: 460px;
   margin-top: calc(9vh + 57px);
   overflow: hidden;
-  -webkit-animation: intro-anim .5s ease-out;
-          animation: intro-anim .5s ease-out;
+  -webkit-animation: intro-anim 0.5s ease-out;
+          animation: intro-anim 0.5s ease-out;
 }
 
 @-webkit-keyframes intro-anim {
@@ -408,6 +408,30 @@
   }
 }
 
+.project-contain .project .project-img {
+  width: 100%;
+  height: calc(100% - 44px);
+}
+
+.project-contain .project .project-img .img-contain {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.project-contain .project .project-img .img-contain img {
+  position: absolute;
+  height: 100%;
+  left: -50%;
+}
+
+@media screen and (min-width: 640px) {
+  .project-contain .project .project-img .img-contain img {
+    left: unset;
+  }
+}
+
 .project-contain .project .project-info {
   position: absolute;
   display: -webkit-box;
@@ -429,6 +453,32 @@
 
 .project-contain .project .project-info .project-name {
   font-size: 16px;
+  -webkit-animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+          animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+@-webkit-keyframes title-anim {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes title-anim {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @media screen and (min-width: 640px) {
@@ -440,6 +490,10 @@
 .project-contain .project .project-info .project-type {
   font-size: 14px;
   color: #777;
+  -webkit-animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+          animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
 @media screen and (min-width: 640px) {
@@ -454,7 +508,7 @@
 
 @media screen and (min-width: 640px) {
   .project-index-contain {
-    padding-top: 56px;
+    padding-top: 40px;
   }
 }
 
@@ -530,8 +584,8 @@
   width: 0;
   height: 2px;
   background-color: #ccc;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.25s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: 0.25s cubic-bezier(0.51, 0.92, 0.24, 1);
 }
 
 .project-index-contain ul li a .info-contain span {
@@ -768,4 +822,4 @@ a {
   text-decoration: none;
   color: #ccc;
 }
-/*# sourceMappingURL=Index.css.map */
+/*# sourceMappingURL=index.css.map */

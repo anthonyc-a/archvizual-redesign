@@ -4,7 +4,7 @@
 
 @media screen and (min-width: 640px) {
   .project-index-contain {
-    padding-top: 56px;
+    padding-top: 40px;
   }
 }
 
@@ -80,8 +80,8 @@
   width: 0;
   height: 2px;
   background-color: #ccc;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.25s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: 0.25s cubic-bezier(0.51, 0.92, 0.24, 1);
 }
 
 .project-index-contain ul li a .info-contain span {
