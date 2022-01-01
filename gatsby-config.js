@@ -1,3 +1,5 @@
+const { doc } = require("prettier")
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -15,6 +17,24 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-firestore`,
+      options: {
+        credential: require("./archvizual-e2d1a-firebase-adminsdk-wt10m-971d89c390.json"),
+        types: [
+          {
+            type: "Band",
+            collection: "bands",
+            map: doc => ({
+              name: doc.name,
+              genre: doc.genre,
+              site: doc.website,
+              img: doc.imgUrl
+            }),
+          },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
@@ -24,7 +44,7 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#111`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
@@ -32,8 +52,5 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
