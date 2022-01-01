@@ -70,7 +70,6 @@ $extra-large: 1600px;
 
       @media screen and (min-width: $small) {
         height: calc(100% - 40px);
-      
       }
 
       .img-contain {
@@ -79,9 +78,11 @@ $extra-large: 1600px;
         height: 100%;
         overflow: hidden;
 
-        &:hover {
-          img {
-            transform: scale(1.05);
+        @media (hover: hover) {
+          &:hover {
+            img {
+              transform: scale(1.05);
+            }
           }
         }
 
@@ -89,7 +90,7 @@ $extra-large: 1600px;
           position: absolute;
           height: 100%;
           left: -50%;
-          transition: .25s ease-in-out;
+          transition: 0.25s ease-in-out;
 
           @media screen and (min-width: $small) {
             left: unset;
@@ -117,7 +118,8 @@ $extra-large: 1600px;
 
       .project-name {
         font-size: 14px;
-        animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+        animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1)
+          forwards;
         transform: translateY(100%);
 
         @keyframes title-anim {
@@ -137,7 +139,8 @@ $extra-large: 1600px;
       .project-type {
         font-size: 14px;
         color: #ccc;
-        animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
+        animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1)
+          forwards;
         transform: translateY(100%);
 
         @media screen and (min-width: $small) {
