@@ -64,7 +64,6 @@ $extra-large: 1600px;
     width: 0;
     height: 2px;
     background-color: #ccc;
-    transition: 0.25s cubic-bezier(0.51, 0.92, 0.24, 1);
   }
 }
 
@@ -146,9 +145,6 @@ $extra-large: 1600px;
 
     @media screen and (min-width: $small) {
       display: block;
-      visibility: visible;
-      opacity: 1;
-      transform: translateX(calc(-100% - 12px));
       font-size: 14px;
     }
   }

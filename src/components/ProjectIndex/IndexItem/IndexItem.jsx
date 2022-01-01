@@ -1,7 +1,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 
-const item = {
+const inItem = {
   hidden: {
     opacity: 0,
     y: 20,
@@ -16,14 +16,32 @@ const item = {
   },
 }
 
-const IndexItem = () => {
+const IndexItem = ({ item, key }) => {
+  const [selected, setSelected] = React.useState(null)
+
+  const toggle = i => {
+    if (selected === i) {
+      return setSelected(null)
+    }
+    setSelected(i)
+  }
+
+  const i = key
+
   return (
-    <li>
+    <li
+      onMouseEnter={() => {
+        toggle(i)
+      }}
+      onMouseLeave={() => {
+        setSelected(null)
+      }}
+    >
       <a href="/">
         <div className="info-contain">
-          <span>02—022</span>
+          <span>{item.tag}</span>
           <div style={{ display: "inline-block", overflow: "hidden" }}>
-            <motion.h3 variants={item}>Project | 38</motion.h3>
+            <motion.h3 variants={inItem}>{item.name}</motion.h3>
           </div>
         </div>
         <div className="index-arrow">
@@ -39,6 +57,10 @@ const IndexItem = () => {
           </svg>
         </div>
       </a>
+
+      <div className={selected === i ? "item-img active" : "item-img"}>
+        <img src={item.img} alt="" />
+      </div>
     </li>
   )
 }

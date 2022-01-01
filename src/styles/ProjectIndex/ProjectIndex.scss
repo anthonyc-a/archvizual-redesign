@@ -5,17 +5,19 @@ $large: 1265px;
 $extra-large: 1600px;
 
 .project-index-contain {
+  overflow: scroll;
   padding-top: 32px;
 
   @media screen and (min-width: $small) {
-    padding-top: 40px;
+    padding-top: 24px;
   }
 
   ul {
     width: 100%;
 
     @media screen and (min-width: $large) {
-      width: 65%;
+      margin-left: auto;
+      width: 75%;
     }
     li {
       margin-bottom: 8px;
@@ -28,7 +30,7 @@ $extra-large: 1600px;
         height: 64px;
 
         @media screen and (min-width: $small) {
-          height: 72px;
+          height: 80px;
         }
 
         &:hover {
@@ -73,7 +75,6 @@ $extra-large: 1600px;
               width: 0;
               height: 2px;
               background-color: #ccc;
-              transition: 0.25s cubic-bezier(0.51, 0.92, 0.24, 1);
             }
           }
 
@@ -114,6 +115,34 @@ $extra-large: 1600px;
               stroke-width: 2px;
             }
           }
+        }
+      }
+
+      .item-img {
+        position: absolute;
+        display: none;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 40px;
+        width: 20%;
+        height: 360px;
+        opacity: 0;
+        overflow: hidden;
+        transition: .375s cubic-bezier(0.51, 0.92, 0.24, 1);
+
+        @media screen and (min-width: $large) {
+          display: block;
+        }
+
+        &.active {
+          opacity: 1;
+        }
+
+        img {
+          position: absolute;
+          left: -50%;
+          height: 100%;
+          filter: grayscale(1);
         }
       }
     }

@@ -1,5 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
+import { data } from "../Projects/ProjectData"
 import IndexItem from "./IndexItem/IndexItem"
 
 const indexItems = {
@@ -19,9 +20,9 @@ const ProjectIndex = ({ archiveOpen }) => {
         initial="hidden"
         animate={archiveOpen === true ? "show" : "hidden"}
       >
-        <IndexItem archiveOpen={archiveOpen} />
-        <IndexItem archiveOpen={archiveOpen} />
-        <IndexItem archiveOpen={archiveOpen} />
+        {data.map((item, i) => (
+          <IndexItem archiveOpen={archiveOpen} item={item} key={i} />
+        ))}
       </motion.ul>
     </div>
   )

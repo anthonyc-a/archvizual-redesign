@@ -115,8 +115,8 @@
   position: absolute;
   height: 100%;
   left: -50%;
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 640px) {
@@ -189,7 +189,7 @@
 
 .project-contain .project .project-info .project-type {
   font-size: 14px;
-  color: #ccc;
+  color: #777;
   -webkit-animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
           animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
   -webkit-transform: translateY(100%);
