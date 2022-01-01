@@ -9,7 +9,7 @@
   font-family: neue-haas-grotesk-text, sans-serif;
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.1px;
   text-transform: uppercase;
   white-space: nowrap;
   z-index: 1000;
@@ -48,12 +48,6 @@
   content: "archvizual";
 }
 
-@media screen and (min-width: 640px) {
-  .logo span:before {
-    content: "architecture";
-  }
-}
-
 .link-hover {
   position: relative;
 }
@@ -72,8 +66,6 @@
   width: 0;
   height: 2px;
   background-color: #ccc;
-  -webkit-transition: 0.25s cubic-bezier(0.51, 0.92, 0.24, 1);
-  transition: 0.25s cubic-bezier(0.51, 0.92, 0.24, 1);
 }
 
 .contact-btn {
@@ -223,6 +215,7 @@
   -webkit-transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1);
   transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1);
   z-index: 1000;
+  overflow: auto;
 }
 
 @media screen and (min-width: 640px) {
@@ -283,11 +276,9 @@
 }
 
 .archive .archive-contain .archive-header ul li {
-  margin-right: 24px;
+  margin-right: 20px;
   color: #777;
   cursor: pointer;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 640px) {
@@ -366,13 +357,13 @@
 
 @media screen and (min-width: 640px) {
   .project-contain .project-carousel {
-    margin-top: 22.5vh;
+    margin-top: 25vh;
   }
 }
 
 .project-contain .project {
   position: relative;
-  width: 272px;
+  width: 280px;
   height: 460px;
   margin-right: 60px;
   background-color: #242424;
@@ -381,7 +372,7 @@
 @media screen and (min-width: 640px) {
   .project-contain .project {
     width: 560px;
-    height: 444px;
+    height: 420px;
     margin-right: 104px;
   }
 }
@@ -398,7 +389,7 @@
           transform-origin: center;
   font-size: 12px;
   letter-spacing: 1px;
-  color: #777;
+  color: #ccc;
 }
 
 @media screen and (min-width: 640px) {
@@ -410,7 +401,13 @@
 
 .project-contain .project .project-img {
   width: 100%;
-  height: calc(100% - 44px);
+  height: calc(100% - 40px);
+}
+
+@media screen and (min-width: 640px) {
+  .project-contain .project .project-img {
+    height: calc(100% - 40px);
+  }
 }
 
 .project-contain .project .project-img .img-contain {
@@ -420,15 +417,25 @@
   overflow: hidden;
 }
 
+@media (hover: hover) {
+  .project-contain .project .project-img .img-contain:hover img {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
 .project-contain .project .project-img .img-contain img {
   position: absolute;
   height: 100%;
   left: -50%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 640px) {
   .project-contain .project .project-img .img-contain img {
     left: unset;
+    height: 100%;
   }
 }
 
@@ -445,14 +452,20 @@
           align-items: flex-end;
   bottom: 0;
   width: 100%;
-  height: 44px;
+  height: 40px;
   padding-top: 20px;
   letter-spacing: 1.5px;
   background-color: #111;
 }
 
+@media screen and (min-width: 640px) {
+  .project-contain .project .project-info {
+    height: 40px;
+  }
+}
+
 .project-contain .project .project-info .project-name {
-  font-size: 16px;
+  font-size: 14px;
   -webkit-animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
           animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
   -webkit-transform: translateY(100%);
@@ -483,7 +496,7 @@
 
 @media screen and (min-width: 640px) {
   .project-contain .project .project-info .project-name {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -503,12 +516,13 @@
 }
 
 .project-index-contain {
+  overflow: scroll;
   padding-top: 32px;
 }
 
 @media screen and (min-width: 640px) {
   .project-index-contain {
-    padding-top: 40px;
+    padding: 24px 0 48px 0;
   }
 }
 
@@ -518,7 +532,8 @@
 
 @media screen and (min-width: 1265px) {
   .project-index-contain ul {
-    width: 65%;
+    margin-left: auto;
+    width: 75%;
   }
 }
 
@@ -540,7 +555,7 @@
 
 @media screen and (min-width: 640px) {
   .project-index-contain ul li a {
-    height: 72px;
+    height: 80px;
   }
 }
 
@@ -584,18 +599,16 @@
   width: 0;
   height: 2px;
   background-color: #ccc;
-  -webkit-transition: 0.25s cubic-bezier(0.51, 0.92, 0.24, 1);
-  transition: 0.25s cubic-bezier(0.51, 0.92, 0.24, 1);
 }
 
 .project-index-contain ul li a .info-contain span {
-  margin-right: 32px;
+  margin-right: 24px;
   font-size: 12px;
   letter-spacing: 1px;
   color: #777;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1040px) {
   .project-index-contain ul li a .info-contain span {
     margin-right: 56px;
     font-size: 14px;
@@ -634,6 +647,39 @@
 .project-index-contain ul li a .index-arrow svg path {
   stroke: #777;
   stroke-width: 2px;
+}
+
+.project-index-contain ul li .item-img {
+  position: fixed;
+  display: none;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 40px;
+  width: 20%;
+  height: 360px;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: 0.375s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: 0.375s cubic-bezier(0.51, 0.92, 0.24, 1);
+}
+
+@media screen and (min-width: 1265px) {
+  .project-index-contain ul li .item-img {
+    display: block;
+  }
+}
+
+.project-index-contain ul li .item-img.active {
+  opacity: 1;
+}
+
+.project-index-contain ul li .item-img img {
+  position: absolute;
+  left: -50%;
+  height: 100%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 /*! Flickity v2.1.2
@@ -791,7 +837,6 @@ https://flickity.metafizzy.co
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scrollbar-width: none;
-  overscroll-behavior: none;
   padding: 0;
   margin: 0;
 }
@@ -799,7 +844,6 @@ https://flickity.metafizzy.co
 html,
 body {
   height: 100%;
-  overflow-y: hidden;
 }
 
 body {
@@ -822,4 +866,4 @@ a {
   text-decoration: none;
   color: #ccc;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=Index.css.map */

@@ -191,6 +191,7 @@ $extra-large: 1600px;
   background-color: #111;
   transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1);
   z-index: 1000;
+  overflow: auto;
 
   @media screen and (min-width: $small) {
     bottom: unset;
@@ -234,7 +235,6 @@ $extra-large: 1600px;
           margin-right: 20px;
           color: #777;
           cursor: pointer;
-          transition: 0.2s ease-in-out;
 
           @media screen and (min-width: $small) {
             margin-right: 24px;

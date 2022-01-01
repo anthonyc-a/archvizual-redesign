@@ -5,7 +5,7 @@
 
 @media screen and (min-width: 640px) {
   .project-index-contain {
-    padding-top: 24px;
+    padding: 24px 0 80px 0;
   }
 }
 
@@ -133,7 +133,7 @@
 }
 
 .project-index-contain ul li .item-img {
-  position: absolute;
+  position: fixed;
   display: none;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -145,6 +145,7 @@
   overflow: hidden;
   -webkit-transition: 0.375s cubic-bezier(0.51, 0.92, 0.24, 1);
   transition: 0.375s cubic-bezier(0.51, 0.92, 0.24, 1);
+  pointer-events: none;
 }
 
 @media screen and (min-width: 1265px) {

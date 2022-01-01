@@ -10,7 +10,7 @@ const ArchiveBtn = ({ archiveOpen, setArchiveOpen }) => {
   }
 
   return (
-    <div className="archive-btn-contain">
+    <a href="#" className="archive-btn-contain">
       <div
         className={!archiveOpen ? "archive-btn" : "archive-btn active"}
         onClick={() => {
@@ -19,7 +19,7 @@ const ArchiveBtn = ({ archiveOpen, setArchiveOpen }) => {
       >
         {itemLoop()}
       </div>
-    </div>
+    </a>
   )
 }
 
