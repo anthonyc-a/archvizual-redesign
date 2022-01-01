@@ -6,7 +6,7 @@ const Project = () => {
   return (
     <>
       {data.map((item, i) => (
-        <a href="/" className="project">
+        <a href="/" className="project" key={i}>
           <div className="project-tag">{item.tag}</div>
           <div className="project-img">
             <div className="img-contain">

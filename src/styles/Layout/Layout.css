@@ -169,6 +169,10 @@
 @media screen and (min-width: 640px) {
   .archive-btn::before {
     display: block;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateX(calc(-100% - 12px));
+            transform: translateX(calc(-100% - 12px));
     font-size: 14px;
   }
 }

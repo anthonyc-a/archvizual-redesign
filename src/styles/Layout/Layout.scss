@@ -146,6 +146,9 @@ $extra-large: 1600px;
 
     @media screen and (min-width: $small) {
       display: block;
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(calc(-100% - 12px));
       font-size: 14px;
     }
   }
