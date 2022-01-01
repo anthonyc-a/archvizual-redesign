@@ -4,7 +4,7 @@ export const FilterStateContext = React.createContext()
 export const FilterDispatchContext = React.createContext()
 
 const initialState = {
-  filter: "residential",
+  filter: "public",
 }
 
 function reducer(state, action) {
