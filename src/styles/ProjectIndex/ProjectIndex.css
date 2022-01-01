@@ -85,13 +85,13 @@
 }
 
 .project-index-contain ul li a .info-contain span {
-  margin-right: 32px;
+  margin-right: 24px;
   font-size: 12px;
   letter-spacing: 1px;
   color: #777;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1040px) {
   .project-index-contain ul li a .info-contain span {
     margin-right: 56px;
     font-size: 14px;
