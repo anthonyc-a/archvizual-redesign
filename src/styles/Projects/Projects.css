@@ -12,6 +12,15 @@
   max-height: 460px;
   margin-top: calc(9vh + 57px);
   overflow: hidden;
+}
+
+@media screen and (min-width: 640px) {
+  .project-contain .project-carousel {
+    margin-top: 25vh;
+  }
+}
+
+.project-contain .project-carousel .carousel {
   -webkit-animation: intro-anim 0.5s ease-out;
           animation: intro-anim 0.5s ease-out;
 }
@@ -42,18 +51,15 @@
   }
 }
 
-@media screen and (min-width: 640px) {
-  .project-contain .project-carousel {
-    margin-top: 25vh;
-  }
-}
-
 .project-contain .project {
   position: relative;
   width: 280px;
   height: 460px;
   margin-right: 60px;
-  background-color: #242424;
+}
+
+.project-contain .project.active {
+  display: block;
 }
 
 @media screen and (min-width: 640px) {
@@ -189,6 +195,7 @@
 
 .project-contain .project .project-info .project-type {
   font-size: 14px;
+  text-transform: capitalize;
   color: #777;
   -webkit-animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
           animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;

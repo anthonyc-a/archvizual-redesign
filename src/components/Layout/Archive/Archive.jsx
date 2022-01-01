@@ -1,8 +1,15 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import {
+  FilterStateContext,
+  FilterDispatchContext,
+} from "../../Context/ToggleFilterProvider"
 import ProjectIndex from "../../ProjectIndex/ProjectIndex"
 
 const Archive = ({ archiveOpen }) => {
+  const filter = React.useContext(FilterStateContext)
+  const toggleFilter = React.useContext(FilterDispatchContext)
+
   return (
     <div className={!archiveOpen ? "archive" : "archive active"}>
       <Helmet>
@@ -12,9 +19,30 @@ const Archive = ({ archiveOpen }) => {
       <div className="archive-contain">
         <div className="archive-header">
           <ul className="filter">
-            <li>Public</li>
-            <li>Concept</li>
-            <li>Residential</li>
+            <li
+              onClick={() => {
+                toggleFilter({ type: "SET_PUBLIC" })
+              }}
+              className={filter.filter === "public" ? "active" : ""}
+            >
+              Public
+            </li>
+            <li
+              onClick={() => {
+                toggleFilter({ type: "SET_CONCEPT" })
+              }}
+              className={filter.filter === "concept" ? "active" : ""}
+            >
+              Concept
+            </li>
+            <li
+              onClick={() => {
+                toggleFilter({ type: "SET_RESI" })
+              }}
+              className={filter.filter === "residential" ? "active" : ""}
+            >
+              Residential
+            </li>
           </ul>
 
           <ul className="socials">

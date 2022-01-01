@@ -17,7 +17,13 @@ $extra-large: 1600px;
     max-height: 460px;
     margin-top: calc(9vh + 57px);
     overflow: hidden;
-    animation: intro-anim 0.5s ease-out;
+
+    @media screen and (min-width: $small) {
+      margin-top: 25vh;
+    }
+
+    .carousel {
+      animation: intro-anim 0.5s ease-out;
 
     @keyframes intro-anim {
       from {
@@ -29,9 +35,6 @@ $extra-large: 1600px;
         transform: translateX(0);
       }
     }
-
-    @media screen and (min-width: $small) {
-      margin-top: 25vh;
     }
   }
 
@@ -40,7 +43,10 @@ $extra-large: 1600px;
     width: 280px;
     height: 460px;
     margin-right: 60px;
-    background-color: #242424;
+
+    &.active {
+      display: block;
+    }
 
     @media screen and (min-width: $small) {
       width: 560px;
@@ -138,6 +144,7 @@ $extra-large: 1600px;
 
       .project-type {
         font-size: 14px;
+        text-transform: capitalize;
         color: #777;
         animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1)
           forwards;

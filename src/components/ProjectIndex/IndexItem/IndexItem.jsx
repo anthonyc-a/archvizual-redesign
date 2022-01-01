@@ -1,5 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
+import { FilterStateContext } from "../../Context/ToggleFilterProvider"
 
 const inItem = {
   hidden: {
@@ -17,6 +18,7 @@ const inItem = {
 }
 
 const IndexItem = ({ item, key }) => {
+  const filter = React.useContext(FilterStateContext)
   const [selected, setSelected] = React.useState(null)
 
   const toggle = i => {
@@ -36,6 +38,7 @@ const IndexItem = ({ item, key }) => {
       onMouseLeave={() => {
         setSelected(null)
       }}
+      className={item.type === filter.filter ? "" : "active"}
     >
       <a href="/">
         <div className="info-contain">

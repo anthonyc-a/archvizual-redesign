@@ -290,7 +290,7 @@
   color: #ccc;
 }
 
-.archive .archive-contain .archive-header ul li:nth-child(1) {
+.archive .archive-contain .archive-header ul li.active {
   color: #ccc;
 }
 
