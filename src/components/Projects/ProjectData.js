@@ -6,7 +6,7 @@ export const data = [
     img: "http://archvizual.com/wp-content/uploads/2017/09/gl_prev_41-1140x757.jpg",
   },
   {
-    name: "House Project | 117",
+    name: "Project | 117",
     tag: "02—028",
     type: "Residential",
     img: "http://archvizual.com/wp-content/uploads/2017/05/gl_prev_34-1140x757.jpg",
@@ -22,5 +22,35 @@ export const data = [
     tag: "02—028",
     type: "Residential",
     img: "http://archvizual.com/wp-content/uploads/2017/05/gl_prev_19-1140x757.jpg",
+  },
+  {
+    name: "Project | 153",
+    tag: "02—012",
+    type: "Public",
+    img: "http://archvizual.com/wp-content/uploads/2017/06/gl_prev_38-1140x757.jpg",
+  },
+  {
+    name: "Project | 813",
+    tag: "02—019",
+    type: "Residential",
+    img: "http://archvizual.com/wp-content/uploads/2017/09/gl_prev_42-1140x757.jpg",
+  },
+  {
+    name: "Project | 717",
+    tag: "02—019",
+    type: "Public",
+    img: "http://archvizual.com/wp-content/uploads/2017/05/gl_prev_29-1140x757.jpg",
+  },
+  {
+    name: "Project | 1113",
+    tag: "02—019",
+    type: "Concept",
+    img: "http://archvizual.com/wp-content/uploads/2018/07/gl_prev_50-1140x757.jpg",
+  },
+  {
+    name: "Lobby Space",
+    tag: "02—019",
+    type: "Public",
+    img: "http://archvizual.com/wp-content/uploads/2017/05/gl_prev_35-1140x757.jpg",
   },
 ]

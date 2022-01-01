@@ -44,7 +44,7 @@
 
 @media screen and (min-width: 640px) {
   .project-contain .project-carousel {
-    margin-top: 24vh;
+    margin-top: 25vh;
   }
 }
 
@@ -59,7 +59,7 @@
 @media screen and (min-width: 640px) {
   .project-contain .project {
     width: 560px;
-    height: 400px;
+    height: 420px;
     margin-right: 104px;
   }
 }
@@ -104,17 +104,23 @@
   overflow: hidden;
 }
 
+.project-contain .project .project-img .img-contain:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .project-contain .project .project-img .img-contain img {
   position: absolute;
   height: 100%;
   left: -50%;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
 @media screen and (min-width: 640px) {
   .project-contain .project .project-img .img-contain img {
     left: unset;
-    width: 100%;
-    height: unset;
+    height: 100%;
   }
 }
 
@@ -175,7 +181,7 @@
 
 @media screen and (min-width: 640px) {
   .project-contain .project .project-info .project-name {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
