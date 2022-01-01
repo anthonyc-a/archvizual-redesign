@@ -516,13 +516,12 @@
 }
 
 .project-index-contain {
-  overflow: scroll;
   padding-top: 32px;
 }
 
 @media screen and (min-width: 640px) {
   .project-index-contain {
-    padding: 24px 0 48px 0;
+    padding: 24px 0 80px 0;
   }
 }
 
@@ -662,6 +661,7 @@
   overflow: hidden;
   -webkit-transition: 0.375s cubic-bezier(0.51, 0.92, 0.24, 1);
   transition: 0.375s cubic-bezier(0.51, 0.92, 0.24, 1);
+  pointer-events: none;
 }
 
 @media screen and (min-width: 1265px) {
@@ -850,8 +850,8 @@ body {
   background-color: #111111;
   color: #ccc;
   font-family: neue-haas-grotesk-display, sans-serif;
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
+  -webkit-transition: background 0.25s ease-out;
+  transition: background 0.25s ease-out;
 }
 
 .archive-open {

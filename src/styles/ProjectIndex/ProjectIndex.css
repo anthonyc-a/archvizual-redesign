@@ -1,5 +1,4 @@
 .project-index-contain {
-  overflow: scroll;
   padding-top: 32px;
 }
 
@@ -133,7 +132,7 @@
 }
 
 .project-index-contain ul li .item-img {
-  position: fixed;
+  position: absolute;
   display: none;
   top: 50%;
   -webkit-transform: translateY(-50%);

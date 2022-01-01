@@ -5,7 +5,6 @@ $large: 1265px;
 $extra-large: 1600px;
 
 .project-index-contain {
-  overflow: scroll;
   padding-top: 32px;
 
   @media screen and (min-width: $small) {
@@ -119,7 +118,7 @@ $extra-large: 1600px;
       }
 
       .item-img {
-        position: fixed;
+        position: absolute;
         display: none;
         top: 50%;
         transform: translateY(-50%);
