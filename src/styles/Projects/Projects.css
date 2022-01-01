@@ -187,7 +187,7 @@
 
 .project-contain .project .project-info .project-type {
   font-size: 14px;
-  color: #777;
+  color: #ccc;
   -webkit-animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
           animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
   -webkit-transform: translateY(100%);
