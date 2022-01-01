@@ -17,24 +17,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-firestore`,
-      options: {
-        credential: require("./archvizual-e2d1a-firebase-adminsdk-wt10m-971d89c390.json"),
-        types: [
-          {
-            type: "Band",
-            collection: "bands",
-            map: doc => ({
-              name: doc.name,
-              genre: doc.genre,
-              site: doc.website,
-              img: doc.imgUrl
-            }),
-          },
-        ],
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
