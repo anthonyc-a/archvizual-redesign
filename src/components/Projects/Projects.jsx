@@ -18,12 +18,12 @@ const Projects = () => {
     <div className="project-contain">
       <div className="project-carousel">
         <Flickity
-          className={"carousel"} // default ''
-          elementType={"div"} // default 'div'
-          options={flickityOptions} // takes flickity options {}
-          disableImagesLoaded={false} // default false
-          reloadOnUpdate // default false
-          static // default false
+          className={"carousel"}
+          elementType={"div"}
+          options={flickityOptions}
+          disableImagesLoaded={false}
+          reloadOnUpdate
+          static
         >
           <Project />
           <Project />

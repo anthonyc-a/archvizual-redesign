@@ -1,15 +1,10 @@
 import React from "react"
-import { motion, useAnimation } from "framer-motion"
+import { motion } from "framer-motion"
 
 const item = {
   hidden: {
     opacity: 0,
     y: 20,
-    transition: {
-      ease: [0.51, 0.92, 0.24, 1],
-      duration: 0.4,
-      delay: 0.1,
-    },
   },
   show: {
     opacity: 1,
