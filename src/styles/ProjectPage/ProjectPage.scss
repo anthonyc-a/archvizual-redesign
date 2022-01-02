@@ -1,6 +1,5 @@
 $smaller: 480px;
 $small: 640px;
-$medium: 1040px;
 $large: 1265px;
 $extra-large: 1600px;
 
@@ -29,7 +28,7 @@ $extra-large: 1600px;
 
     .project-page-img {
       width: 100%;
-      margin-bottom: 64px;
+      margin-bottom: 40px;
       overflow: hidden;
 
       img {
@@ -55,8 +54,12 @@ $extra-large: 1600px;
       height: 350px;
 
       span {
-        font-size: 14px;
+        font-size: 12px;
         letter-spacing: 1.5px;
+
+        @media screen and (min-width: $medium) {
+            font-size: 14px;
+          }
       }
 
       .project-info-section {

@@ -51,7 +51,9 @@ const project = () => {
                 <h3>Project | 38</h3>
                 <span>2017</span>
               </div>
-              <div className="project-page-type">Residential House</div>
+              <div className="project-page-type">
+                <span>Residential House</span>
+              </div>
               <div className="project-info-section project-page-bottom">
                 <span>Scroll</span>
                 <span>02—022</span>
