@@ -8,7 +8,7 @@ const index = () => {
   return (
     <>
       <Helmet>
-        <title>Home | Archvizual</title>
+        <title>Home - Archvizual</title>
       </Helmet>
       <Layout>
         <Projects />

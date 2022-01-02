@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const Project = ({ project }) => {
   return (
-    <a href="/project" className="project">
+    <a href="/project-page" className="project">
       <div className="project-tag">{project.tag}</div>
       <div className="project-img">
         <div className="img-contain">

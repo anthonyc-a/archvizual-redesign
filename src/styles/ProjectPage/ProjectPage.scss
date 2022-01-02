@@ -32,6 +32,10 @@ $extra-large: 1600px;
       margin-bottom: 40px;
       overflow: hidden;
 
+      &:nth-last-child(1) {
+          margin-bottom: 80px;
+      }
+
       img {
         width: 100%;
       }
