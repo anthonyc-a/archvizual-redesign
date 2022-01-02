@@ -70,6 +70,9 @@
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
+  .project-contain .project:hover .project-info .project-name::after {
+    width: 100%;
+  }
   .project-contain .project img {
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
@@ -157,11 +160,22 @@
 }
 
 .project-contain .project .project-info .project-name {
+  position: relative;
   font-size: 14px;
   -webkit-animation: title-anim 0.75s 0.5s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
           animation: title-anim 0.75s 0.5s cubic-bezier(0.51, 0.92, 0.24, 1) forwards;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+}
+
+.project-contain .project .project-info .project-name::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ccc;
 }
 
 @-webkit-keyframes title-anim {

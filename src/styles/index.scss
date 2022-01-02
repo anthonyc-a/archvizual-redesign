@@ -2,6 +2,7 @@
 @import "./Layout/Layout.scss";
 @import "./Projects/Projects.scss";
 @import "./ProjectIndex/ProjectIndex.scss";
+@import "./ProjectPage/ProjectPage.scss";
 @import "./Flickity/Flickity.scss";
 
 ::-webkit-scrollbar {
@@ -33,6 +34,12 @@ body {
 
 ul {
   list-style: none;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
 }
 
 a {

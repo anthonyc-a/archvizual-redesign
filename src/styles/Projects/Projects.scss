@@ -56,6 +56,16 @@ $extra-large: 1600px;
         }
       }
 
+      &:hover {
+        .project-info {
+          .project-name {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+
       img {
         filter: grayscale(1);
       }
@@ -122,10 +132,21 @@ $extra-large: 1600px;
       }
 
       .project-name {
+        position: relative;
         font-size: 14px;
         animation: title-anim 0.75s 0.5s cubic-bezier(0.51, 0.92, 0.24, 1)
           forwards;
         transform: translateY(100%);
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: #ccc;
+        }
 
         @keyframes title-anim {
           from {

@@ -5,7 +5,7 @@ $large: 1265px;
 $extra-large: 1600px;
 
 .logo {
-  position: fixed;
+  position: absolute;
   top: 32px;
   left: 16px;
   display: flex;
@@ -69,7 +69,7 @@ $extra-large: 1600px;
 
 .contact-btn {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 40px;
   left: 40px;
   font-size: 13px;
@@ -104,7 +104,7 @@ $extra-large: 1600px;
 }
 
 .archive-btn-contain {
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
