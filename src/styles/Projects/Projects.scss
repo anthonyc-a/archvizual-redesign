@@ -23,18 +23,18 @@ $extra-large: 1600px;
     }
 
     .carousel {
-      animation: intro-anim 0.5s ease-out;
+      animation: intro-anim 0.875s cubic-bezier(0.51, 0.92, 0.24, 1);
 
-    @keyframes intro-anim {
-      from {
-        opacity: 0;
-        transform: translateX(24px);
+      @keyframes intro-anim {
+        from {
+          opacity: 0;
+          transform: translateX(32px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
       }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
     }
   }
 
@@ -44,8 +44,16 @@ $extra-large: 1600px;
     height: 460px;
     margin-right: 60px;
 
-    &.active {
-      display: block;
+    &.is-selected {
+      img {
+        filter: grayscale(0);
+        transform: scale(1.05);
+
+      }
+    }
+
+    img {
+      filter: grayscale(1);
     }
 
     @media screen and (min-width: $small) {
@@ -84,14 +92,6 @@ $extra-large: 1600px;
         height: 100%;
         overflow: hidden;
 
-        @media (hover: hover) {
-          &:hover {
-            img {
-              transform: scale(1.05);
-            }
-          }
-        }
-
         img {
           position: absolute;
           height: 100%;
@@ -124,7 +124,7 @@ $extra-large: 1600px;
 
       .project-name {
         font-size: 14px;
-        animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1)
+        animation: title-anim 0.75s 0.5s cubic-bezier(0.51, 0.92, 0.24, 1)
           forwards;
         transform: translateY(100%);
 
@@ -146,7 +146,7 @@ $extra-large: 1600px;
         font-size: 14px;
         text-transform: capitalize;
         color: #777;
-        animation: title-anim 0.75s 0.375s cubic-bezier(0.51, 0.92, 0.24, 1)
+        animation: title-anim 0.75s 0.5s cubic-bezier(0.51, 0.92, 0.24, 1)
           forwards;
         transform: translateY(100%);
 
