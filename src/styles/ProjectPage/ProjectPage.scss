@@ -14,7 +14,6 @@ $extra-large: 1600px;
   padding: 0 16px;
 
   @media screen and (min-width: $medium) {
-    top: 200px;
     flex-direction: row;
     padding: 40px;
   }
@@ -41,11 +40,11 @@ $extra-large: 1600px;
 
   .project-page-info-contain {
     width: 100%;
-    height: fill;
     margin-bottom: 64px;
 
     @media screen and (min-width: $medium) {
       width: calc(100% - 560px);
+      height: fill;
       margin-bottom: unset;
     }
 
