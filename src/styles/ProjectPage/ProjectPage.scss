@@ -31,9 +31,21 @@ $extra-large: 1600px;
       width: 100%;
       margin-bottom: 40px;
       overflow: hidden;
+      opacity: 0;
+      animation: project-img-anim 0.5s ease 0.25s forwards;
 
       &:nth-last-child(1) {
-          margin-bottom: 80px;
+        margin-bottom: 80px;
+      }
+
+      @keyframes project-img-anim {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
       }
 
       img {
