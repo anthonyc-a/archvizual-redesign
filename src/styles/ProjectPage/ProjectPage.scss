@@ -72,6 +72,10 @@ $extra-large: 1600px;
         justify-content: space-between;
       }
 
+      .project-page-header {
+          align-items: flex-end;
+      }
+
       .project-page-type {
         margin-top: 40px;
         letter-spacing: 1.5px;
