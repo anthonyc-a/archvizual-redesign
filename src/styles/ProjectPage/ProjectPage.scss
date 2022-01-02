@@ -55,7 +55,7 @@ $extra-large: 1600px;
       height: 240px;
 
       @media screen and (min-width: $medium) {
-        height: 350px;
+        height: 400px;
       }
 
       span {
@@ -87,6 +87,13 @@ $extra-large: 1600px;
       .project-page-bottom {
         position: absolute;
         bottom: 0;
+
+        span {
+            &:nth-last-child(1) {
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+        }
       }
     }
   }
