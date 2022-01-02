@@ -32,7 +32,7 @@ $extra-large: 1600px;
       margin-bottom: 40px;
       overflow: hidden;
       opacity: 0;
-      animation: project-img-anim 0.875s ease 0.25s forwards;
+      animation: project-img-anim 0.875s ease 0.5s forwards;
 
       &:nth-last-child(1) {
         margin-bottom: 80px;
