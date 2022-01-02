@@ -9,7 +9,7 @@ import ProjectPageImg from "../components/ProjectPage/ProjectPageImg"
 const pageItems = {
   show: {
     transition: {
-      delayChildren: 0.25,
+      delayChildren: 0.125,
     },
   },
 }
@@ -53,16 +53,12 @@ const project = () => {
               animate="show"
             >
               <div className="project-info-section project-page-header">
-                <div style={{ display: "inline-block", overflow: "hidden" }}>
-                  <motion.h3 variants={pageItem}>Project | 38</motion.h3>
-                </div>
+                <motion.h3 variants={pageItem}>Project | 38</motion.h3>
                 <motion.span variants={pageItem}>2017</motion.span>
               </div>
-              <div style={{ display: "inline-block", overflow: "hidden" }}>
-                <motion.div variants={pageItem} className="project-page-type">
-                  <span>Residential House</span>
-                </motion.div>
-              </div>
+              <motion.div variants={pageItem} className="project-page-type">
+                <span>Residential House</span>
+              </motion.div>
               <div className="project-info-section project-page-bottom">
                 <motion.span variants={pageItem}>
                   <BsArrowDown size={10} />
