@@ -44,7 +44,8 @@ $extra-large: 1600px;
 
     @media screen and (min-width: $medium) {
       width: calc(100% - 640px);
-      height: fill;
+      height: auto;
+      background-color: yellow;
       margin-bottom: unset;
     }
 
@@ -80,7 +81,6 @@ $extra-large: 1600px;
 
       .project-page-type {
         margin-top: 40px;
-        letter-spacing: 1.5px;
         color: #777;
       }
 
@@ -89,10 +89,15 @@ $extra-large: 1600px;
         bottom: 0;
 
         span {
-            &:nth-last-child(1) {
-                font-weight: 400;
-                letter-spacing: 1px;
+          &:nth-child(1) {
+            svg {
+              margin-right: 4px;
             }
+          }
+          &:nth-last-child(1) {
+            font-weight: 400;
+            letter-spacing: 1px;
+          }
         }
       }
     }

@@ -1,4 +1,5 @@
 import React from "react"
+import { BsArrowDown } from "react-icons/bs"
 import Layout from "../components/Layout/Layout"
 import "../styles/index.scss"
 
@@ -55,7 +56,10 @@ const project = () => {
                 <span>Residential House</span>
               </div>
               <div className="project-info-section project-page-bottom">
-                <span>Scroll</span>
+                <span>
+                  <BsArrowDown size={10} />
+                  Scroll down
+                </span>
                 <span>02—022</span>
               </div>
             </div>
