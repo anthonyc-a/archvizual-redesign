@@ -1,12 +1,13 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Logo = () => {
   return (
-    <a href="/" className="logo">
+    <Link to="/" className="logo">
       roman vlasov
       <div className="divide"></div>
       <span></span>
-    </a>
+    </Link>
   )
 }
 

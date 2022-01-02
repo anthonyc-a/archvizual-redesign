@@ -1,6 +1,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { FilterStateContext } from "../../Context/ToggleFilterProvider"
+import { Link } from "gatsby"
 
 const inItem = {
   hidden: {
@@ -40,7 +41,7 @@ const IndexItem = ({ item, key }) => {
       }}
       className={item.type === filter.filter ? "" : "active"}
     >
-      <a href="/">
+      <Link to={item.link}>
         <div className="info-contain">
           <span>{item.tag}</span>
           <div style={{ display: "inline-block", overflow: "hidden" }}>
@@ -59,7 +60,7 @@ const IndexItem = ({ item, key }) => {
             <path d="M20.9983 1L1 20.9994" stroke="#CCCCCC" />
           </svg>
         </div>
-      </a>
+      </Link>
 
       <div className={selected === i ? "item-img active" : "item-img"}>
         <img src={item.img} alt="" />

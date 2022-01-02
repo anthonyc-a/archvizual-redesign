@@ -5,6 +5,7 @@ import { BsArrowDown } from "react-icons/bs"
 import Layout from "../components/Layout/Layout"
 import "../styles/index.scss"
 import ProjectPageImg from "../components/ProjectPage/ProjectPageImg"
+import { project_153 } from "../components/Projects/ProjectImg/Project153"
 
 const pageItems = {
   show: {
@@ -29,21 +30,18 @@ const pageItem = {
   },
 }
 
-const project = () => {
+const Project153 = () => {
   return (
     <>
       <Helmet>
-        <title>Project | 38 - Archvizual</title>
+        <title>Project | 153 - Archvizual</title>
       </Helmet>
       <Layout>
         <div className="project-page-contain">
           <div className="project-page-img-contain">
-            <ProjectPageImg url="http://archvizual.com/wp-content/uploads/2017/05/gl_prev_19-1140x757.jpg" />
-            <ProjectPageImg url="http://archvizual.com/wp-content/uploads/2017/05/pr_36.jpg" />
-            <ProjectPageImg url="http://archvizual.com/wp-content/uploads/2017/05/pr_37.jpg" />
-            <ProjectPageImg url="http://archvizual.com/wp-content/uploads/2017/05/pr_38.jpg" />
-            <ProjectPageImg url="http://archvizual.com/wp-content/uploads/2017/05/pr_39.jpg" />
-            <ProjectPageImg url="http://archvizual.com/wp-content/uploads/2017/05/pr_41.jpg" />
+            {project_153.map((item, i) => (
+              <ProjectPageImg url={item.img} key={i} />
+            ))}
           </div>
           <div className="project-page-info-contain">
             <motion.div
@@ -53,11 +51,11 @@ const project = () => {
               animate="show"
             >
               <div className="project-info-section project-page-header">
-                <motion.h3 variants={pageItem}>Project | 38</motion.h3>
-                <motion.span variants={pageItem}>2017</motion.span>
+                <motion.h3 variants={pageItem}>Project | 153</motion.h3>
+                <motion.span variants={pageItem}>2015</motion.span>
               </div>
               <motion.div variants={pageItem} className="project-page-type">
-                <span>Residential House</span>
+                <span>Public Space</span>
               </motion.div>
               <div className="project-info-section project-page-bottom">
                 <motion.span variants={pageItem}>
@@ -74,4 +72,4 @@ const project = () => {
   )
 }
 
-export default project
+export default Project153

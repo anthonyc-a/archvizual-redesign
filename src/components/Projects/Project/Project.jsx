@@ -1,9 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 
 const Project = ({ project }) => {
   return (
-    <a href="/project-page" className="project">
+    <a href={project.link} className="project">
       <div className="project-tag">{project.tag}</div>
       <div className="project-img">
         <div className="img-contain">

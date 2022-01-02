@@ -19,8 +19,7 @@ $extra-large: 1600px;
 
   @media screen and (min-width: $small) {
     top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 40px;
     font-size: 13px;
   }
 
@@ -30,10 +29,6 @@ $extra-large: 1600px;
     height: 16px;
     margin: 0 8px;
     background-color: #777;
-
-    @media screen and (min-width: $small) {
-      margin: 0 10px;
-    }
   }
 
   span {
@@ -97,7 +92,6 @@ $extra-large: 1600px;
   }
 
   @media screen and (min-width: $small) {
-    display: flex;
     align-items: center;
     font-size: 14px;
   }
@@ -145,6 +139,9 @@ $extra-large: 1600px;
 
     @media screen and (min-width: $small) {
       display: block;
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(calc(-100% - 12px));
       font-size: 14px;
     }
   }
