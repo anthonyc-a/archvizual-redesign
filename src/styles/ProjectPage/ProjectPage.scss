@@ -13,6 +13,7 @@ $extra-large: 1600px;
   padding: 0 16px;
 
   @media screen and (min-width: $medium) {
+    top: 120px;
     flex-direction: row;
     padding: 40px;
   }
@@ -23,7 +24,7 @@ $extra-large: 1600px;
     margin-right: 80px;
 
     @media screen and (min-width: $medium) {
-      width: 560px;
+      width: 640px;
     }
 
     .project-page-img {
@@ -42,7 +43,7 @@ $extra-large: 1600px;
     margin-bottom: 64px;
 
     @media screen and (min-width: $medium) {
-      width: calc(100% - 560px);
+      width: calc(100% - 640px);
       height: fill;
       margin-bottom: unset;
     }
@@ -59,6 +60,7 @@ $extra-large: 1600px;
 
       span {
         font-size: 13px;
+        font-weight: 500;
         letter-spacing: 1.5px;
 
         @media screen and (min-width: $medium) {
@@ -73,7 +75,7 @@ $extra-large: 1600px;
       }
 
       .project-page-header {
-          align-items: flex-end;
+        align-items: flex-end;
       }
 
       .project-page-type {
