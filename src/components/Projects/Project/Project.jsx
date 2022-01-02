@@ -1,35 +1,12 @@
 import React from "react"
 
-const Project = ({ project, key }) => {
-  const [selected, setSelected] = React.useState(null)
-
-  const toggle = i => {
-    if (selected === i) {
-      return setSelected(null)
-    }
-    setSelected(i)
-  }
-
-  const i = key
+const Project = ({ project }) => {
   return (
-    <a
-      href="/"
-      className="project"
-      onMouseEnter={() => {
-        toggle(i)
-      }}
-      onMouseLeave={() => {
-        setSelected(null)
-      }}
-    >
+    <a href="/" className="project">
       <div className="project-tag">{project.tag}</div>
       <div className="project-img">
         <div className="img-contain">
-          <img
-            src={project.img}
-            alt=""
-            className={selected === i ? "proj-img active" : "proj-img"}
-          />
+          <img src={project.img} alt="" />
         </div>
       </div>
       <div className="project-info">

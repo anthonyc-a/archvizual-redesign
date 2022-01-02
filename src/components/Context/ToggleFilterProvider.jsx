@@ -12,7 +12,7 @@ function reducer(state, action) {
     case "SET_PUBLIC": {
       return {
         ...state,
-        filter: state.filter !== "public" && "public",
+        filter: state.filter !== "public" ? "public" : "public",
       }
     }
 
@@ -23,7 +23,7 @@ function reducer(state, action) {
     case "SET_RESI": {
       return {
         ...state,
-        filter: state.filter !== "residential" && "residential",
+        filter: state.filter !== "residential" ? "residential" : "residential",
       }
     }
 
@@ -34,7 +34,7 @@ function reducer(state, action) {
     case "SET_CONCEPT": {
       return {
         ...state,
-        filter: state.filter !== "concept" && "concept",
+        filter: state.filter !== "concept" ? "concept" : "concept",
       }
     }
 

@@ -45,9 +45,13 @@ $extra-large: 1600px;
           .info-contain {
             h3 {
               &::after {
+                content: '';
+                position: absolute;
                 width: 100%;
+                height: 2px;
                 right: unset;
                 left: 0;
+                background-color: #ccc;
               }
             }
           }

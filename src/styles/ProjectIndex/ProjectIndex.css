@@ -47,9 +47,13 @@
 }
 
 .project-index-contain ul li a:hover .info-contain h3::after {
+  content: '';
+  position: absolute;
   width: 100%;
+  height: 2px;
   right: unset;
   left: 0;
+  background-color: #ccc;
 }
 
 .project-index-contain ul li a .info-contain {
