@@ -75,11 +75,6 @@ $extra-large: 1600px;
       .project-page-bottom {
         position: absolute;
         bottom: 0;
-
-        span {
-          &:nth-last-child(1) {
-          }
-        }
       }
     }
   }
