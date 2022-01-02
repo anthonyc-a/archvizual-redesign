@@ -45,7 +45,6 @@ $extra-large: 1600px;
     @media screen and (min-width: $medium) {
       width: calc(100% - 640px);
       height: auto;
-      background-color: yellow;
       margin-bottom: unset;
     }
 
