@@ -268,3 +268,21 @@ $extra-large: 1600px;
     }
   }
 }
+
+.scrollbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100vh;
+  z-index: 10000;
+
+  @media screen and (max-width: $small) {
+    display: none;
+  }
+
+  .scrollbar-inner {
+    width: 100%;
+    background-color: #ccc;
+  }
+}
