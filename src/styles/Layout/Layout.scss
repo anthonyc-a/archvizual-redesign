@@ -206,6 +206,12 @@ $extra-large: 1600px;
     }
   }
 
+  @media screen and (max-width: $small) {
+    &.inactive {
+      bottom: calc(-100% + 72px);
+    }
+  }
+
   .archive-contain {
     width: 100%;
 
@@ -218,6 +224,7 @@ $extra-large: 1600px;
       font-weight: 500;
       letter-spacing: 1px;
       border-top: 1px solid #777;
+      transition: 0.25s cubic-bezier(0.51, 0.92, 0.24, 1);
 
       @media screen and (min-width: $small) {
         justify-content: space-between;

@@ -9,9 +9,33 @@ import ProjectIndex from "../../ProjectIndex/ProjectIndex"
 const Archive = ({ archiveOpen }) => {
   const filter = React.useContext(FilterStateContext)
   const toggleFilter = React.useContext(FilterDispatchContext)
+  const [scrollTop, setScrollTop] = React.useState(0)
+
+  const onScroll = () => {
+    const winScroll = document.documentElement.scrollTop
+    const height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight
+
+    const scrolled = (winScroll / height) * 100
+
+    setScrollTop(scrolled)
+  }
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", onScroll)
+
+    return () => window.removeEventListener("scroll", onscroll)
+  }, [])
+
+  console.log(scrollTop)
 
   return (
-    <div className={!archiveOpen ? "archive" : "archive active"}>
+    <div
+      className={`${!archiveOpen ? "archive" : "archive active"} ${
+        scrollTop > 2.5 ? "archive inactive" : "archive"
+      }`}
+    >
       <Helmet>
         <body className={!archiveOpen ? "" : "archive-open"} />
       </Helmet>
