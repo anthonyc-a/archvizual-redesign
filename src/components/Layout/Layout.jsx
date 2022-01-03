@@ -3,7 +3,7 @@ import Archive from "./Archive/Archive"
 import ArchiveBtn from "./Archive/ArchiveBtn/ArchiveBtn"
 import ContactBtn from "./ContactBtn/ContactBtn"
 import Logo from "./Header/Logo/Logo"
-import Scrollbar from "./ScrollBar/ScrollBar"
+import Scrollbar from "./Scrollbar/Scrollbar"
 
 const Layout = ({ children }) => {
   const [archiveOpen, setArchiveOpen] = React.useState(false)
