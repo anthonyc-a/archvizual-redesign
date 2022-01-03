@@ -49,13 +49,6 @@ $extra-large: 1600px;
       height: 420px;
       margin-right: 104px;
 
-      &.is-selected {
-        img {
-          filter: grayscale(0);
-          transform: scale(1.05);
-        }
-      }
-
       &:hover {
         .project-info {
           .project-name {
@@ -64,10 +57,12 @@ $extra-large: 1600px;
             }
           }
         }
-      }
 
-      img {
-        filter: grayscale(1);
+        .project-img {
+          img {
+            transform: scale(1.05);
+          }
+        }
       }
     }
 
