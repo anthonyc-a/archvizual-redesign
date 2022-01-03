@@ -1,6 +1,6 @@
 import proj37 from "../../../images/project-37/project-37-1.jpg"
 import proj117 from "../../../images/project-117/project-117-1.jpg"
-import proj817 from "../../../images/project-37/project-37-1.jpg"
+import proj817 from "../../../images/project-817/project-817-1.jpg"
 
 export const residentialProjects = [
   {
@@ -21,7 +21,7 @@ export const residentialProjects = [
     name: "Project | 817",
     tag: "02—022",
     type: "residential",
-    img: "http://archvizual.com/wp-content/uploads/2017/09/gl_prev_41-1140x757.jpg",
+    img: proj817,
     link: "/project-817",
   },
 ]
