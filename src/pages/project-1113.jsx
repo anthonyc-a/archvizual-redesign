@@ -55,7 +55,7 @@ const Project1113 = () => {
                 <motion.span variants={pageItem}>2017</motion.span>
               </div>
               <motion.div variants={pageItem} className="project-page-type">
-                <span>Residential House</span>
+                <span>Conceptual Design</span>
               </motion.div>
               <div className="project-info-section project-page-bottom">
                 <motion.span variants={pageItem}>
