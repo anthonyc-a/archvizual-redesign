@@ -5,21 +5,21 @@ import proj817 from "../../../images/project-817/project-817-1.jpg"
 export const residentialIndexProjects = [
   {
     name: "Project | 37",
-    tag: "02—028",
+    tag: "02—022",
     type: "residential",
     img: proj37,
     link: "/project-37",
   },
   {
     name: "Project | 117",
-    tag: "02—028",
+    tag: "02—065",
     type: "residential",
     img: proj117,
     link: "/project-117",
   },
   {
     name: "Project | 817",
-    tag: "02—022",
+    tag: "02—079",
     type: "residential",
     img: proj817,
     link: "/project-817",

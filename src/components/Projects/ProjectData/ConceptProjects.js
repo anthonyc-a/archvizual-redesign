@@ -12,14 +12,14 @@ export const conceptProjects = [
   },
   {
     name: "Project | 1113",
-    tag: "02—019",
+    tag: "02—092",
     type: "concept",
     img: proj1113,
     link: "/project-1113",
   },
   {
     name: "Project | 157",
-    tag: "02—022",
+    tag: "02—028",
     type: "concept",
     img: proj157,
     link: "/project-157",
@@ -33,14 +33,14 @@ export const conceptProjects = [
   },
   {
     name: "Project | 1113",
-    tag: "02—019",
+    tag: "02—092",
     type: "concept",
     img: proj1113,
     link: "/project-1113",
   },
   {
     name: "Project | 157",
-    tag: "02—022",
+    tag: "02—028",
     type: "concept",
     img: proj157,
     link: "/project-157",

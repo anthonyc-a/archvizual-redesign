@@ -19,7 +19,7 @@ export const publicProjects = [
   },
   {
     name: "Project | 717",
-    tag: "02—019",
+    tag: "02—065",
     type: "public",
     img: proj717,
     link: "/project-717",
@@ -40,7 +40,7 @@ export const publicProjects = [
   },
   {
     name: "Project | 717",
-    tag: "02—019",
+    tag: "02—065",
     type: "public",
     img: proj717,
     link: "/project-717",
