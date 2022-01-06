@@ -24,6 +24,7 @@ $extra-large: 1600px;
 
     .carousel {
       animation: intro-anim 0.875s cubic-bezier(0.51, 0.92, 0.24, 1);
+    cursor: ew-resize !important;
 
       @keyframes intro-anim {
         from {
