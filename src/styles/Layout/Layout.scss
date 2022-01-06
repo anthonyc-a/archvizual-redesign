@@ -141,7 +141,8 @@ $extra-large: 1600px;
       display: block;
       visibility: visible;
       opacity: 1;
-      transform: translateX(calc(-100% - 12px));
+      transform: translateX(-100%);
+      padding-right: 12px;
       font-size: 14px;
     }
   }
@@ -152,6 +153,10 @@ $extra-large: 1600px;
       opacity: 1;
       transform: translateX(calc(-100% - 12px));
       transition-delay: 0.25s;
+
+      @media screen and (min-width: $small) {
+        transform: translateX(-100%);
+      }
     }
     .btn-item {
       background-color: #ccc;
@@ -164,6 +169,10 @@ $extra-large: 1600px;
         visibility: visible;
         opacity: 1;
         transform: translateX(calc(-100% - 12px));
+
+        @media screen and (min-width: $small) {
+          transform: translateX(-100%);
+        }
       }
       .btn-item {
         background-color: #ccc;

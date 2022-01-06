@@ -79,12 +79,14 @@ $extra-large: 1600px;
           }
 
           span {
+            width: 51px;
             margin-right: 24px;
             font-size: 12px;
             letter-spacing: 1px;
             color: #777;
 
             @media screen and (min-width: $medium) {
+              width: 60px;
               margin-right: 56px;
               font-size: 14px;
             }
