@@ -1,7 +1,8 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
 import { motion } from "framer-motion"
-import { BsArrowDown } from "react-icons/bs"
+import { BsChevronLeft } from "react-icons/bs"
 import Layout from "../components/Layout/Layout"
 import "../styles/index.scss"
 import ProjectPageImg from "../components/ProjectPage/ProjectPageImg"
@@ -58,9 +59,9 @@ const Project157 = () => {
                 <span>Residential House</span>
               </motion.div>
               <div className="project-info-section project-page-bottom">
-                <motion.span variants={pageItem}>
-                  <BsArrowDown size={10} />
-                  Scroll down
+                <motion.span href="" variants={pageItem}>
+                  <BsChevronLeft size={10} />
+                  <Link to="/">Back Home</Link>
                 </motion.span>
                 <motion.span variants={pageItem}>02—022</motion.span>
               </div>

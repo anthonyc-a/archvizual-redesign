@@ -25,6 +25,14 @@ const Archive = ({ archiveOpen, scrollTop }) => {
           <ul className="filter">
             <li
               onClick={() => {
+                toggleFilter({ type: "SET_ALL" })
+              }}
+              className={filter.filter === "all" ? "active" : ""}
+            >
+              All
+            </li>
+            <li
+              onClick={() => {
                 toggleFilter({ type: "SET_PUBLIC" })
               }}
               className={filter.filter === "public" ? "active" : ""}

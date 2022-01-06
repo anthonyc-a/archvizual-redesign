@@ -1,7 +1,7 @@
 $smaller: 480px;
 $small: 640px;
 $large: 1265px;
-$extra-large: 1600px;
+$x-large: 1600px;
 
 .project-page-contain {
   position: relative;
@@ -25,6 +25,9 @@ $extra-large: 1600px;
 
     @media screen and (min-width: $medium) {
       width: 640px;
+    }
+    @media screen and (min-width: $x-large) {
+      width: 840px;
     }
 
     .project-page-img {
@@ -73,6 +76,9 @@ $extra-large: 1600px;
       @media screen and (min-width: $medium) {
         height: 400px;
       }
+      @media screen and (min-width: $x-large) {
+        height: 480px;
+      }
 
       span {
         font-size: 14px;
@@ -106,7 +112,7 @@ $extra-large: 1600px;
         span {
           &:nth-child(1) {
             svg {
-              margin-right: 4px;
+              margin-right: 6px;
             }
           }
           &:nth-last-child(1) {

@@ -1,6 +1,7 @@
 import React from "react"
 import Flickity from "react-flickity-component"
 import { FilterStateContext } from "../Context/ToggleFilterProvider"
+import { allProjects } from "./ProjectData/AllProjects"
 import { publicProjects } from "./ProjectData/PublicProjects"
 import { conceptProjects } from "./ProjectData/ConceptProjects"
 import { residentialProjects } from "./ProjectData/ResidentialProjects"
@@ -24,6 +25,20 @@ const Projects = () => {
   return (
     <div className="project-contain">
       <div className="project-carousel">
+        {filter.filter === "all" && (
+          <Flickity
+            className={"carousel"}
+            elementType={"div"}
+            options={flickityOptions}
+            disableImagesLoaded={true}
+            reloadOnUpdate={true}
+          >
+            {allProjects.map((project, i) => (
+              <Project project={project} key={i} />
+            ))}
+          </Flickity>
+        )}
+
         {filter.filter === "public" && (
           <Flickity
             className={"carousel"}

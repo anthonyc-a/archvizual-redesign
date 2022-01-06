@@ -1,9 +1,10 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { FilterStateContext } from "../Context/ToggleFilterProvider"
-import { publicProjects } from "../Projects/ProjectData/PublicProjects"
-import { conceptProjects } from "../Projects/ProjectData/ConceptProjects"
-import { residentialProjects } from "../Projects/ProjectData/ResidentialProjects"
+import { allProjects } from "../Projects/ProjectData/AllProjects"
+import { publicIndexProjects } from "../Projects/ProjectData/PublicIndexData"
+import { conceptIndexProjects } from "../Projects/ProjectData/ConceptIndexData"
+import { residentialIndexProjects } from "../Projects/ProjectData/ResidentialIndexData"
 import IndexItem from "./IndexItem/IndexItem"
 
 const indexItems = {
@@ -20,35 +21,49 @@ const ProjectIndex = ({ archiveOpen }) => {
 
   return (
     <div className="project-index-contain">
+      {filter.filter === "all" && (
+        <motion.ul
+          variants={indexItems}
+          initial="hidden"
+          animate={archiveOpen === true ? "show" : "hidden"}
+        >
+          {allProjects.map((item, i) => (
+            <IndexItem archiveOpen={archiveOpen} item={item} key={i} />
+          ))}
+        </motion.ul>
+      )}
+
       {filter.filter === "public" && (
         <motion.ul
           variants={indexItems}
           initial="hidden"
           animate={archiveOpen === true ? "show" : "hidden"}
         >
-          {publicProjects.map((item, i) => (
+          {publicIndexProjects.map((item, i) => (
             <IndexItem archiveOpen={archiveOpen} item={item} key={i} />
           ))}
         </motion.ul>
       )}
+
       {filter.filter === "concept" && (
         <motion.ul
           variants={indexItems}
           initial="hidden"
           animate={archiveOpen === true ? "show" : "hidden"}
         >
-          {conceptProjects.map((item, i) => (
+          {conceptIndexProjects.map((item, i) => (
             <IndexItem archiveOpen={archiveOpen} item={item} key={i} />
           ))}
         </motion.ul>
       )}
+
       {filter.filter === "residential" && (
         <motion.ul
           variants={indexItems}
           initial="hidden"
           animate={archiveOpen === true ? "show" : "hidden"}
         >
-          {residentialProjects.map((item, i) => (
+          {residentialIndexProjects.map((item, i) => (
             <IndexItem archiveOpen={archiveOpen} item={item} key={i} />
           ))}
         </motion.ul>

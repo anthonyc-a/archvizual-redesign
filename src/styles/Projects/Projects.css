@@ -64,18 +64,12 @@
     height: 420px;
     margin-right: 104px;
   }
-  .project-contain .project.is-selected img {
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
   .project-contain .project:hover .project-info .project-name::after {
     width: 100%;
   }
-  .project-contain .project img {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
+  .project-contain .project:hover .project-img img {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 

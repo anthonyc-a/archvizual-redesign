@@ -4,10 +4,21 @@ export const FilterStateContext = React.createContext()
 export const FilterDispatchContext = React.createContext()
 
 const initialState = {
-  filter: "public",
+  filter: "all",
 }
 
 function reducer(state, action) {
+  switch (action.type) {
+    case "SET_ALL": {
+      return {
+        ...state,
+        filter: state.filter !== "all" ? "all" : "all",
+      }
+    }
+
+    default:
+  }
+
   switch (action.type) {
     case "SET_PUBLIC": {
       return {
