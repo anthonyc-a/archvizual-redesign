@@ -59,7 +59,12 @@ const Archive = ({ archiveOpen, scrollTop }) => {
 
           <ul className="socials">
             <li>
-              <a href="https://www.instagram.com/_vlasov_roman_/" className="link-hover">
+              <a
+                href="https://www.instagram.com/_vlasov_roman_/"
+                target={"_blank"}
+                rel="noreferrer"
+                className="link-hover"
+              >
                 Instagram
               </a>
             </li>
